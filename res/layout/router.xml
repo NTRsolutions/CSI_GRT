@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/x5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/routerdisp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/router_disptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="#777777"
+            android:textSize="@dimen/x16" >
+
+        </TextView>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x5" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5" >
+
+            <TextView
+                android:id="@+id/routerssid_label"
+                android:textSize="@dimen/x16"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="SSID"
+                android:layout_margin="@dimen/x5"
+                android:textColor="#666666" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/routerssid_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:background="@drawable/edittext_bg"
+                android:ellipsize="middle"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/x5" >
+            </EditText>
+
+            <Button
+                android:id="@+id/router_button"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x40"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_weight="2"
+                android:background="@drawable/btn_selector"
+                android:text="获取SSID"
+                android:layout_margin="@dimen/x5"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:textSize="@dimen/x14" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5" >
+
+            <TextView
+                android:id="@+id/routerpwd_label"
+              android:textSize="@dimen/x16"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:layout_margin="@dimen/x5"
+                android:textColor="#666666" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/routerpwd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_weight="10"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingLeft="@dimen/x5"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/routerpwd_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/x5"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_weight="2"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="#666666" >
+
+            </CheckBox>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

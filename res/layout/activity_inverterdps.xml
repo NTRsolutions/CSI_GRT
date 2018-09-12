@@ -1,0 +1,351 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChartpageActivity" >
+<!--上面布局-->
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/headerView"
+            layout="@layout/header_view" />
+
+        <RelativeLayout
+            android:id="@+id/body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_time_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/headerView"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio_button11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chart"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/all_time_day"
+                            android:textColor="@color/selector_radio_color"
+                            android:textSize="@dimen/x14" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button22"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chart"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/all_time_month"
+                            android:textColor="@color/selector_radio_color"
+                            android:textSize="@dimen/x14" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button33"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chart"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/all_time_year"
+                            android:textColor="@color/selector_radio_color"
+                            android:textSize="@dimen/x14" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button44"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_chart"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/all_time_all"
+                            android:textColor="@color/selector_radio_color"
+                            android:textSize="@dimen/x14" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginTop="@dimen/y10"
+                    android:background="@drawable/shape_listview_white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <FrameLayout
+                        android:id="@+id/btnadvance"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="@dimen/x10"
+                            android:layout_height="@dimen/x15"
+                            android:layout_gravity="center"
+                            android:background="@drawable/chart_lift" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/txData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x30"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="2013-04-05"
+                        android:textColor="@color/headerView" />
+
+                    <FrameLayout
+                        android:id="@+id/btnback"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="@dimen/x10"
+                            android:layout_height="@dimen/x15"
+                            android:layout_gravity="center"
+                            android:background="@drawable/chart_right" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginBottom="@dimen/y8"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/x100"
+                        android:layout_height="@dimen/x40"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/x15">
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x30"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/power_text_bg"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/x8"
+                            android:paddingRight="@dimen/x8"
+                            android:text="@string/inverterdps_pv"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/x16" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xyContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x35"
+                android:layout_below="@+id/layout_time_text"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/power_units"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textColor="@color/note_bg_white" />
+
+                <TextView
+                    android:id="@+id/tvXY"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/line_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chartsview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/slideUp"
+                android:layout_below="@+id/xyContainer"
+                android:layout_marginBottom="@dimen/x10"
+                android:paddingLeft="6dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/slideUp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/tvSlideUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/m8"
+                    android:textColor="@color/hint_bg_white"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivSlideUp"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/slide_up" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--上面布局结束-->
+    <!--下面布局开始-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_background"
+        android:padding="@dimen/x20"
+        >
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="" />
+        <LinearLayout
+            android:id="@+id/ll_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m41" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m35" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m36" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m37" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m38" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m39" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="@string/m40" />
+        </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_week" />
+        <ListView
+            android:id="@+id/lvData"
+            android:background="@drawable/shape_listview_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/flipper1"
+            android:layout_marginTop="10dp"
+            android:dividerHeight="0dp"
+
+            android:divider="@null"
+            />
+
+
+    </RelativeLayout>
+
+    <!--下面布局结束-->
+</LinearLayout>

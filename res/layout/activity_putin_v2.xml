@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context="com.growatt.shinephone.activity.PutinV2Activity">
+ <!--头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/headerView"
+        android:orientation="horizontal"
+        >
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvCancle"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x30"
+            android:text="@string/all_no"
+            android:textSize="@dimen/size_content_title"
+            android:textColor="@color/content_bg_blue"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x5"
+            android:background="@drawable/edittext_bg_stroke"
+            />
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x30"
+            android:layout_weight="1"
+            android:text="@string/m90提交问题"
+            android:textSize="@dimen/size_head_title"
+            android:textColor="@color/content_bg_blue"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x5"
+            />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvOk"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:background="@drawable/edittext_bg_stroke"
+            android:gravity="center"
+            android:text="@string/all_ok"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_content_title" />
+    </LinearLayout>
+    <!--主界面-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:orientation="vertical">
+            <!--21-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/datadetailed_headline"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/PutingAct_etTitle"
+                    android:lines="1"
+                    android:textColor="@color/title_bg_white"
+                    android:textColorHint="@color/hint_bg_white"
+                    android:textSize="@dimen/size_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/note_bg_white" />
+            <!--22-->
+            <LinearLayout
+                android:id="@+id/llQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/putin_xml_type"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="@string/PutingAct_etQuestion"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x12"
+                        android:layout_gravity="center"
+                        android:src="@drawable/select_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/note_bg_white" />
+            <!--23-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/putin_xml_number"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text=":"-->
+                <!--android:textColor="@color/title_bg_white"-->
+                <!--android:textSize="@dimen/size_content" />-->
+
+                <EditText
+                    android:id="@+id/etSN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/PutingAct_etSn"
+                    android:lines="1"
+                    android:textColor="@color/title_bg_white"
+                    android:textColorHint="@color/hint_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/tvClickSn"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/PutinActivity_search"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/note_bg_white" />
+            <!--24-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPhoneOrEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/m82手机号"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <EditText
+                    android:id="@+id/etPhoneOrEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white_background"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_phone_no_blank"
+                    android:lines="1"
+                    android:textColor="@color/title_bg_white"
+                    android:textColorHint="@color/hint_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <FrameLayout
+                    android:id="@+id/flSelectPhone"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="@dimen/x12"
+                        android:layout_gravity="center"
+                        android:src="@drawable/select_icon" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/note_bg_white" />
+            <!--25-->
+            <LinearLayout
+                android:id="@+id/llVer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/m94您的手机号还未验证"
+                    android:textColor="@color/headerView"
+                    android:textSize="@dimen/size_content" />
+                <Button
+                    android:id="@+id/btnVer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="点击验证"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_background"
+                    android:textColorHint="@color/hint_bg_white"
+                    android:textSize="@dimen/size_content" />
+            </LinearLayout>
+
+
+            <!--26-->
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/y8"
+                android:layout_weight="1"
+                android:background="@color/white_background"
+                android:gravity="start"
+                android:hint="@string/m77请输入相关问题的详细描述"
+                android:textColor="@color/title_bg_white"
+                android:textColorHint="@color/hint_bg_white"
+                android:textSize="@dimen/size_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    <!--3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@color/gray_background"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <FrameLayout
+            android:id="@+id/flPhoto"
+            android:layout_width="@dimen/y35"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/oss_pic_icon" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

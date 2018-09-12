@@ -1,0 +1,119 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    tools:context=".activity.MainActivity"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r2"
+        android:layout_alignParentTop="true" 
+        >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </RelativeLayout>
+    <View 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="#78d4d4d4" 
+       android:layout_above="@+id/r2"
+        />
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x53"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_alignParentBottom="true"
+            android:background="#aaFFFFFF"
+            android:orientation="horizontal"
+            >
+
+            <com.growatt.shinephone.view.MyRadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:button="@null"
+                android:paddingLeft="0dp"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/main_device"
+                android:textColor="@color/text_main_tab_selector"
+                app1:drawableTop="@drawable/home_ic_tab_selector"
+                app1:drawableTopWith="@dimen/x30"
+                app1:drawableTopHeight="@dimen/x30"
+                android:textSize="@dimen/x9" />
+            
+   
+            <com.growatt.shinephone.view.MyRadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:button="@null"
+                android:paddingLeft="0dp"
+                android:gravity="center"
+                android:text="@string/main_energy"
+                android:textColor="@color/text_main_tab_selector"
+                app1:drawableTop="@drawable/near_ic_tab_selector"
+                app1:drawableTopWith="@dimen/x30"
+                app1:drawableTopHeight="@dimen/x30"
+                android:textSize="@dimen/x9" />
+
+            <com.growatt.shinephone.view.MyRadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/main_service"
+                android:textColor="@color/text_main_tab_selector"
+                app1:drawableTop="@drawable/my_ic_tab_selector"
+                app1:drawableTopWith="@dimen/x30"
+                app1:drawableTopHeight="@dimen/x30"
+                android:textSize="@dimen/x9" />
+
+            <com.growatt.shinephone.view.MyRadioButton
+                android:id="@+id/radio_button4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x50"
+                android:layout_weight="1"
+                android:button="@null"
+                android:paddingLeft="0dp"
+                android:gravity="center"
+                android:text="@string/main_me"
+                android:textColor="@color/text_main_tab_selector"
+                app1:drawableTop="@drawable/more_ic_tab_selector"
+                app1:drawableTopWith="@dimen/x30"
+                app1:drawableTopHeight="@dimen/x30"
+                android:textSize="@dimen/x9" />
+
+        </RadioGroup>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/ivGuide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</RelativeLayout>

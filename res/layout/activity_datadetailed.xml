@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.growatt.shinephone.activity.DatadetailedActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relate1"
+            android:layout_below="@+id/headerView"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x45" >
+
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/textView1"
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x25"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:text="@string/datadetailed_headline"
+                        android:textSize="@dimen/x16" />
+
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x35"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:textSize="@dimen/x16"
+                        android:textIsSelectable="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="#3ec6f8" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x45" >
+
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x25"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:text="@string/datadetailed_genre"
+                        android:textSize="@dimen/x16" />
+
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x35"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:textSize="@dimen/x16"
+                        android:textIsSelectable="true"
+                        android:layout_toRightOf="@+id/textView3" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/x3"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginTop="@dimen/x3"
+                android:background="#3ec6f8" >
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:divider="#00000000" >
+
+            </ListView>
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fdffff"
+        android:focusable="true"
+        android:paddingBottom="@dimen/x5"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="@drawable/datadetailed_text_bg"
+            android:minHeight="@dimen/x30"
+            android:paddingLeft="@dimen/x4"
+            android:textColor="#444444"
+            android:textSize="@dimen/x15" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/x46"
+            android:layout_height="@dimen/x30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/chat_selector"
+            android:text="@string/all_send"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x12" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/x35"
+            android:layout_height="@dimen/x30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x3"
+            android:layout_marginRight="@dimen/x3"
+            android:layout_marginTop="@dimen/x5"
+            android:padding="@dimen/x1"
+            android:src="@drawable/tupian" />
+    </RelativeLayout>
+
+</RelativeLayout>

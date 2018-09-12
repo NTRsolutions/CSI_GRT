@@ -1,0 +1,353 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhotovoltaicActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_time_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/headerView"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/r2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x38">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_button11"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_chart"
+                                android:button="@null"
+                                android:checked="true"
+                                android:gravity="center"
+                                android:text="@string/all_time_day"
+                                android:textColor="@color/selector_radio_color"
+                                android:textSize="@dimen/x14" />
+
+                            <RadioButton
+                                android:id="@+id/radio_button22"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="-1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_chart"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/all_time_month"
+                                android:textColor="@color/selector_radio_color"
+                                android:textSize="@dimen/x14" />
+
+                            <RadioButton
+                                android:id="@+id/radio_button33"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="-1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_chart"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/all_time_year"
+                                android:textColor="@color/selector_radio_color"
+                                android:textSize="@dimen/x14" />
+
+                            <RadioButton
+                                android:id="@+id/radio_button44"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="-1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/selector_chart"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/all_time_all"
+                                android:textColor="@color/selector_radio_color"
+                                android:textSize="@dimen/x14" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/y10"
+                        android:layout_marginTop="@dimen/y10"
+                        android:background="@drawable/shape_listview_white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <FrameLayout
+                            android:id="@+id/btnadvance"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="@dimen/x10"
+                                android:layout_height="@dimen/x15"
+                                android:layout_gravity="center"
+                                android:background="@drawable/chart_lift" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/txData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x30"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="2013-04-05"
+                            android:textColor="@color/headerView" />
+
+                        <FrameLayout
+                            android:id="@+id/btnback"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="@dimen/x10"
+                                android:layout_height="@dimen/x15"
+                                android:layout_gravity="center"
+                                android:background="@drawable/chart_right" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y90"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignRight="@+id/relative1"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/PhotovoItaicAct_discharged"
+                                android:textColor="#ffffff" />
+
+                            <RelativeLayout
+                                android:id="@+id/relative1"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/grid_bg_blue"></RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/relative1"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#ffffff" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grid_bg_blue"></RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignRight="@+id/relative2"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/photovoltaic_most"
+                                android:textColor="#ffffff" />
+
+                            <RelativeLayout
+                                android:id="@+id/relative2"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/grid_bg_blue"></RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/relative2"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#ffffff" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grid_bg_blue"></RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/y5"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignRight="@+id/relative3"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="@string/photovoltaic_dayincome"
+                                android:textColor="#ffffff" />
+
+                            <RelativeLayout
+                                android:id="@+id/relative3"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@color/grid_bg_blue"></RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/relative3"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#ffffff" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/power_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y20"
+                    android:layout_below="@id/layout_time_text"
+                    android:layout_marginTop="@dimen/x3">
+
+                    <TextView
+                        android:id="@+id/power_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x8"
+                        android:gravity="bottom"
+                        android:textColor="@color/note_bg_white" />
+
+                    <TextView
+                        android:id="@+id/tvXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/power_units"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/line_color"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_power_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/chartday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/chartsview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

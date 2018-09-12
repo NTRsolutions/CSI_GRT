@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--42-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_onlineInv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y15"
+                android:layout_marginTop="@dimen/y4"
+                android:orientation="horizontal">
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="在线逆变器:"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/tvOnlineNumInv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x5"
+                    android:text=""
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <ImageView
+                    android:layout_width="@dimen/x4"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/oss_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y4"
+                android:background="@drawable/oss_bg_device_online" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_waitInv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y15"
+                android:layout_marginTop="@dimen/y4"
+                android:orientation="horizontal">
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="等待逆变器:"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/tvWaitNumInv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x5"
+                    android:text=""
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content" />
+
+                <ImageView
+                    android:layout_width="@dimen/x4"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/oss_more" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y4"
+                android:background="@drawable/oss_bg_device_wait" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--43-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/ll_errInv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y15"
+                    android:layout_marginTop="@dimen/y4"
+                    android:orientation="horizontal"
+                    >
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="match_parent"
+                        android:text="故障逆变器:"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_content"
+                        android:textColor="@color/content_bg_white"
+                        />
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/tvErrNumInv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_content"
+                        android:textColor="@color/content_bg_white"
+                        android:paddingLeft="@dimen/x5"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/x4"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/oss_more"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@drawable/oss_bg_device_err"
+                    android:layout_marginTop="@dimen/y4"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_offlineInv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y15"
+                    android:layout_marginTop="@dimen/y4"
+                    android:orientation="horizontal"
+                    >
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="match_parent"
+                        android:text="离线逆变器:"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_content"
+                        android:textColor="@color/content_bg_white"
+                        />
+
+                    <com.growatt.shinephone.view.AutoFitTextView
+                        android:id="@+id/tvOfflineNumInv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x5"
+                        android:text=""
+                        android:textColor="@color/content_bg_white"
+                        android:textSize="@dimen/size_content" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x4"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/oss_more"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@drawable/oss_bg_device_offline"
+                    android:layout_marginTop="@dimen/y4"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

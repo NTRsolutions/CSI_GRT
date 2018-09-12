@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+        android:background="@drawable/item_selector"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_toLeftOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView1"
+            android:lines="1"
+            android:layout_marginRight="@dimen/x8"
+            android:text=""
+            android:textSize="@dimen/size_content"
+            android:textColor="@color/content_bg_white" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/x13"
+            android:textColor="#999999"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView5"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_toRightOf="@+id/textView3"
+            android:lines="1"
+            android:layout_marginLeft="@dimen/x3"
+            android:textColor="#aaaaaa"
+			 android:textSize="@dimen/x13"
+            android:layout_marginRight="@dimen/x5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x5"
+            android:textColor="#aaaaaa"
+			 android:textSize="@dimen/x13"
+            android:text="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

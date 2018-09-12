@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background"
+    tools:context="com.growatt.shinephone.ossactivity.OssToolsActivity">
+    <include
+        android:id="@+id/headerView"
+        layout="@layout/header_view"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/headerView_r50"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_gravity="center"
+            android:background="@color/headerView"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/wifi_icon"
+                android:gravity="center"
+                android:text="查询采集器校验码"
+                android:textColor="@color/white1"
+                android:textSize="@dimen/x13" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_sn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/power_text_bg"
+            android:gravity="center"
+            android:hint="@string/ShineWifiSet_sn"
+            android:paddingLeft="@dimen/x8"
+            android:textColor="#ffffff"
+            android:textColorHint="#78ffffff"
+            android:textSize="@dimen/x13" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y20"
+    android:layout_marginLeft="@dimen/x30"
+    android:layout_marginRight="@dimen/x30"
+    android:layout_marginTop="@dimen/y10"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/autoFitTextView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="采集器校验码为："
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x13" />
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/tvCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x13" />
+</LinearLayout>
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_selector"
+            android:textColor="#ffffff"
+            android:text="@string/all_twodimension" />
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y25"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/btn_selector"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x13" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_newWifi2"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y15"
+        android:background="@drawable/btn_selector"
+        android:text="@string/countryandcity_next"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x13"
+        android:visibility="gone"
+        />
+</LinearLayout>

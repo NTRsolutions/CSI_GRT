@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    android:orientation="vertical"
+    tools:context=".SearchActivity" >
+    <include layout="@layout/header_view_title" android:id="@+id/headerView"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:focusable="true"
+     android:focusableInTouchMode="true"
+    android:layout_height="@dimen/x50" >
+	<requestFocus />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x38"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:hint="@string/country_inputcountry"
+        android:textSize="@dimen/x15"
+        android:ems="10" >
+
+    </EditText>
+
+</RelativeLayout>
+
+<!-- <ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="#78aaaaaa"
+    android:background="#ffffff"
+    android:dividerHeight="0.5dp" 
+    >
+</ListView>
+ -->
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#ffffff"
+        >
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+        <com.growatt.shinephone.view.MyLetterView 
+            android:id="@+id/mlv_city_letters"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

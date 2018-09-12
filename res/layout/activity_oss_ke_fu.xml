@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context="com.growatt.shinephone.ossactivity.OssKeFuActivity">
+    <include android:id="@+id/headerView" layout="@layout/header_view" />
+    <ImageView
+        android:id="@+id/ivOssJkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x110"
+        android:scaleType="fitXY"
+        android:src="@drawable/oss_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y15"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x8"
+            android:paddingLeft="@dimen/x10">
+            <ImageView
+                android:id="@+id/ivGif1"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/y10"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/oss_message_icon2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="最新接收消息"
+                android:textStyle="bold"
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_note" />
+
+            <TextView
+                android:id="@+id/tvNewNote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_note" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llNewMsg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y15"
+            android:orientation="horizontal"
+            android:background="@drawable/item_click_whitetogray"
+            android:paddingLeft="@dimen/x20"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/ivNewsPoint"
+                android:layout_width="@dimen/x5"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_point_red"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvNewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_note" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="："
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_note" />
+
+            <TextView
+                android:id="@+id/tvNewContent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_note" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss"
+            android:layout_marginTop="@dimen/x8"
+            />
+        <!--问题管理-->
+        <LinearLayout
+            android:id="@+id/llKeFu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:background="@drawable/item_click_whitetogray"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10">
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="match_parent"
+                android:src="@drawable/oss_onlineserver_icon" />
+
+            <TextView
+                android:id="@+id/tvKeFu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="在线客服"
+                android:textColor="@color/title_bg_white"
+                android:textSize="@dimen/size_content_title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/y10"
+                android:layout_gravity="center"
+                android:src="@drawable/oss_kefu_more" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss" />
+        <!--问题管理内容-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewQues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss" />
+        <!--工单系统-->
+        <LinearLayout
+            android:id="@+id/llGD"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:background="@drawable/item_click_whitetogray"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10">
+
+            <ImageView
+                android:layout_width="@dimen/x20"
+                android:layout_height="match_parent"
+                android:src="@drawable/ossjk_workorder" />
+
+            <TextView
+                android:id="@+id/tvGD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="工单系统"
+                android:textColor="@color/title_bg_white"
+                android:textSize="@dimen/size_content_title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/y10"
+                android:layout_gravity="center"
+                android:src="@drawable/oss_kefu_more" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss" />
+        <!--问题管理内容-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewGD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/flDeviceSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        >
+        <Button
+            android:id="@+id/btnDevice"
+            android:layout_width="@dimen/y40"
+            android:layout_height="@dimen/y40"
+            android:background="@drawable/selector_osskf_search"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ConversationFragment中列表的每一个条目 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="@dimen/x90"
+    android:background="@drawable/item_selector"
+     >
+    <!-- 底下的部分 -->
+    <LinearLayout
+        android:id="@+id/conversatinListview_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/conversationlist_top"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:text="@string/fragment1_top"
+            android:background="#63d1f9"
+            android:textColor="#ffffff"
+            />
+        <Button
+            android:id="@+id/conversationlist_edit"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:background="#c9c3c3"
+            android:text="@string/fragment1_edit"
+            android:textColor="#ffffff"
+            />
+        
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingTop="@dimen/x5" 
+    android:id="@+id/conversatinListview_front"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:padding="@dimen/x5"
+        android:layout_marginLeft="@dimen/x15" />
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView1"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x30"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_toRightOf="@+id/imageView1"
+        android:maxEms="8"
+        android:lines="1"
+        android:text="逆变器"
+        android:textSize="@dimen/x15" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x20"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/textView4"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="@string/all_power"
+                android:textColor="#aaaaaa"
+                android:textSize="@dimen/x12" />
+
+            <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/x3"
+                android:text="220KW"
+                android:textColor="#aaaaaa"
+                android:textSize="@dimen/x12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/textView6"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="日电量:"
+                android:textColor="#aaaaaa"
+                android:textSize="@dimen/x12" />
+
+            <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/x3"
+                android:text="500kWh"
+                android:textColor="#aaaaaa"
+                android:textSize="@dimen/x12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_marginTop="@dimen/x5"
+        android:background="#ededed" >
+    </RelativeLayout>
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x30"
+        android:gravity="center_vertical"
+        android:text="断开"
+        android:textColor="#aaaaaa"
+        android:textSize="@dimen/x12"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x15"
+        android:layout_marginBottom="@dimen/x1"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:src="@drawable/frag4"
+         />
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context="com.growatt.shinephone.CacheVideoActivity" >
+
+ <include 
+     android:id="@+id/headerView"
+     layout="@layout/header_view_title"
+     />
+  <CheckBox
+            android:id="@+id/checkBox1"
+             android:layout_below="@+id/headerView"
+            android:layout_width="@dimen/x30"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x5"
+            android:visibility="gone"
+            />
+  <!-- 添加emptyview -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:layout_marginTop="@dimen/x10"
+     android:layout_below="@+id/checkBox1"
+    >
+ <ListView 
+     android:id="@+id/listView1"
+    
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     />
+  <ImageView 
+    android:id="@+id/emptyView"
+    android:layout_width="@dimen/x256"
+    android:layout_height="@dimen/x320"
+    android:layout_centerInParent="true"
+    />
+</RelativeLayout>
+</RelativeLayout>

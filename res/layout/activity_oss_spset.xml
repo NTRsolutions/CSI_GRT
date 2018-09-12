@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background"
+    tools:context="com.growatt.shinephone.ossactivity.OssSPSetActivity">
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y20"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/y30"
+    android:layout_gravity="center_horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y20"
+        android:gravity="center"
+        android:text="@string/storageset_lithium_battery"
+        android:textColor="@color/content_bg_blue"
+        android:textSize="@dimen/size_content"
+        />
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/tvOpenV"
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/y20"
+        android:gravity="center"
+        android:text="400"
+        android:textColor="@color/content_bg_blue"
+        android:textSize="@dimen/size_content"
+        />
+</LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarOpen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:max="200"
+        android:progress="100"
+        android:progressBackgroundTint="@color/seekbar_bluebg"
+        android:progressTint="@color/seekbar_bluebg"
+        android:thumbTint="@color/seekbar_bluebg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_head_title"
+            android:paddingLeft="@dimen/x10"
+            android:text="300V"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_head_title"
+            android:paddingRight="@dimen/x10"
+            android:gravity="right"
+            android:text="500V"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y20"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y20"
+            android:gravity="center"
+            android:text="@string/storageset_lithium_mpp"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_content" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvMPPV"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/y20"
+            android:gravity="center"
+            android:text="240"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_content"
+            />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarMPP"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:max="350"
+        android:progress="50"
+        android:progressBackgroundTint="@color/seekbar_bluebg"
+        android:progressTint="@color/seekbar_bluebg"
+        android:thumbTint="@color/seekbar_bluebg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        >
+        <TextView
+            android:id="@+id/tvMPPVMin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_head_title"
+            android:paddingLeft="@dimen/x10"
+            android:text="220V"
+            />
+        <TextView
+            android:id="@+id/tvMPPVMax"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_head_title"
+            android:paddingRight="@dimen/x10"
+            android:gravity="right"
+            android:text="360V"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y30"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:text="@string/all_ok"
+        android:textSize="@dimen/x17" />
+</LinearLayout>

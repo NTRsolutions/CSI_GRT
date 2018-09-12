@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context=".WIFIlistActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+    <ListView
+        android:id="@+id/WiFiList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x300"
+        android:fadeScrollbars="false"
+        android:fastScrollEnabled="true" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x5"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_marginTop="@dimen/x5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/wifi_pwdlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/wifi_pwdtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:visibility="gone" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/RefleshButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/x2"
+                android:background="@drawable/btn_selector"
+                android:enabled="true"
+                android:textSize="@dimen/x14"
+                android:text="@string/wifilist_refresh"
+                android:textColor="#ffffff" >
+            </Button>
+
+            <Button
+                android:id="@+id/mConfirmButton"
+                android:layout_margin="@dimen/x2"
+                android:textSize="@dimen/x14"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_selector"
+                android:enabled="false"
+                android:text="@string/wifilist_configuration"
+                android:textColor="#ffffff" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

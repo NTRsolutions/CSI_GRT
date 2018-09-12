@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical"
+    tools:context=".PlantAdminActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+<ListView
+    android:id="@+id/listView1"
+    android:divider="#78aaaaaa"
+    android:dividerHeight="0.5dp"
+    android:scrollbars="none"
+    android:layout_marginLeft="@dimen/x10"
+    android:layout_marginRight="@dimen/x10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#78aaaaaa"
+    android:layout_marginLeft="@dimen/x10"
+    android:layout_marginRight="@dimen/x10"
+    android:layout_height="0.5dp" >
+</RelativeLayout>
+
+</LinearLayout>

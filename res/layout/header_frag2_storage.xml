@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x231"
+    android:orientation="vertical"
+    >
+ <RelativeLayout
+     android:id="@+id/activity_storagy"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/x200"
+     android:background="@drawable/bg_storage_gradient_3">
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/autoFitTextView5"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_marginLeft="@dimen/x10"
+      android:layout_marginTop="@dimen/x14"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/mm38"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <ImageView
+      android:id="@+id/iv1"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_alignLeft="@+id/autoFitTextView5"
+      android:layout_below="@+id/autoFitTextView5"
+      android:src="@drawable/icon_solor" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvPv1"
+      android:layout_width="@dimen/x32"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/autoFitTextView5"
+      android:layout_marginTop="@dimen/x12"
+      android:layout_toRightOf="@+id/iv1"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <View
+      android:id="@+id/line0"
+      android:layout_width="@dimen/x32"
+      android:layout_height="1dp"
+      android:layout_below="@+id/tvPv1"
+      android:layout_toRightOf="@+id/iv1"
+      android:background="#e5dc78" />
+
+  <View
+      android:id="@+id/line1"
+      android:layout_width="@dimen/x32"
+      android:layout_height="1dp"
+      android:layout_marginTop="@dimen/x72"
+      android:layout_toRightOf="@+id/iv1"
+      android:background="#e5dc78"
+      android:visibility="invisible" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvPv2"
+      android:layout_width="@dimen/x32"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/line1"
+      android:layout_toRightOf="@+id/iv1"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10"
+      android:visibility="invisible" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_alignBottom="@+id/autoFitTextView5"
+      android:layout_toRightOf="@+id/line0"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/mm39"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10"
+
+      />
+
+  <ImageView
+      android:id="@+id/iv2"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_alignTop="@+id/iv1"
+      android:layout_toRightOf="@+id/tvPv1"
+      android:src="@drawable/icon_sp" />
+
+  <View
+      android:id="@+id/line2"
+      android:layout_width="@dimen/x45"
+      android:layout_height="1dp"
+      android:layout_below="@+id/autoFitTextView5"
+      android:layout_marginTop="@dimen/x12"
+      android:layout_toRightOf="@+id/iv2"
+      android:background="#e5dc78" />
+
+  <View
+      android:id="@+id/line5"
+      android:layout_width="@dimen/x23"
+      android:layout_height="1dp"
+      android:layout_below="@+id/line2"
+      android:layout_marginTop="@dimen/x24"
+      android:layout_toRightOf="@+id/iv2"
+      android:background="#e5dc78" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_alignBottom="@+id/autoFitTextView5"
+      android:layout_toRightOf="@+id/line2"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/mm40"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <ImageView
+      android:id="@+id/iv3"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_alignTop="@+id/iv1"
+      android:layout_toRightOf="@+id/line2"
+      android:src="@drawable/icon_inv" />
+
+  <View
+      android:id="@+id/line3"
+      android:layout_width="@dimen/x32"
+      android:layout_height="1dp"
+      android:layout_below="@+id/autoFitTextView5"
+      android:layout_marginTop="@dimen/x24"
+      android:layout_toRightOf="@+id/iv3"
+      android:background="#e5dc78" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_alignBottom="@+id/autoFitTextView5"
+      android:layout_toRightOf="@+id/line3"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/mm41"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <ImageView
+      android:id="@+id/iv4"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_alignTop="@+id/iv1"
+      android:layout_toRightOf="@+id/line3"
+      android:src="@drawable/icon_grid" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvPacToGrid"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/iv4"
+      android:layout_toRightOf="@+id/line3"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <View
+      android:id="@+id/line4"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/x36"
+      android:layout_below="@+id/iv2"
+      android:layout_marginLeft="@dimen/x24"
+      android:layout_toRightOf="@+id/line1"
+      android:background="#e5dc78" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvPCharge"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/iv2"
+      android:layout_marginLeft="@dimen/x66"
+      android:layout_marginTop="@dimen/x12"
+      android:gravity="center_vertical|right"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <ImageView
+      android:id="@+id/iv5"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_below="@+id/line4"
+      android:layout_toRightOf="@+id/line0"
+      android:src="@drawable/icon_bat" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvBat"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/iv5"
+      android:layout_toRightOf="@+id/line0"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/mm42"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvCapacity"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/tvBat"
+      android:layout_toRightOf="@+id/line0"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <View
+      android:id="@+id/line6"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/x28"
+      android:layout_below="@+id/line5"
+      android:layout_toRightOf="@+id/line5"
+      android:background="#e5dc78" />
+
+  <View
+      android:id="@+id/line7"
+      android:layout_width="@dimen/x86"
+      android:layout_height="1dp"
+      android:layout_alignLeft="@+id/line6"
+      android:layout_below="@+id/line6"
+      android:background="#e5dc78" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvPacCharge"
+      android:layout_width="@dimen/x85"
+      android:layout_height="@dimen/x12"
+      android:layout_alignLeft="@+id/line6"
+      android:layout_below="@+id/line7"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <View
+      android:id="@+id/line8"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/x40"
+      android:layout_below="@+id/line3"
+      android:layout_marginLeft="@dimen/x16"
+      android:layout_toRightOf="@+id/iv3"
+      android:background="#e5dc78" />
+
+  <View
+      android:id="@+id/line9"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/x20"
+      android:layout_below="@+id/line8"
+      android:layout_marginLeft="@dimen/x16"
+      android:layout_toRightOf="@+id/iv3"
+      android:background="#e5dc78" />
+
+  <View
+      android:id="@+id/line10"
+      android:layout_width="1dp"
+      android:layout_height="@dimen/x60"
+      android:layout_below="@+id/line3"
+      android:layout_marginLeft="@dimen/x16"
+      android:layout_toRightOf="@+id/iv3"
+      android:background="#e5dc78"
+      />
+
+  <ImageView
+      android:id="@+id/iv6"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x48"
+      android:layout_below="@+id/line10"
+      android:layout_marginLeft="@dimen/x40"
+      android:layout_toRightOf="@+id/line2"
+      android:src="@drawable/icon_load" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_alignLeft="@+id/iv6"
+      android:layout_below="@+id/iv5"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/m43"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvUserLoad"
+      android:layout_width="@dimen/x48"
+      android:layout_height="@dimen/x12"
+      android:layout_alignLeft="@+id/iv6"
+      android:layout_below="@+id/tvBat"
+      android:gravity="center"
+      android:lines="1"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <FrameLayout
+      android:id="@+id/frameNote"
+      android:layout_width="@dimen/x60"
+      android:layout_height="@dimen/x30"
+      android:layout_above="@+id/tvUnit">
+
+   <ImageView
+       android:layout_width="@dimen/x20"
+       android:layout_height="@dimen/x20"
+       android:layout_gravity="center"
+       android:src="@drawable/zhushi" />
+  </FrameLayout>
+
+  <com.growatt.shinephone.view.AutoFitTextView
+      android:id="@+id/tvUnit"
+      android:layout_width="@dimen/x60"
+      android:layout_height="@dimen/x12"
+      android:layout_below="@+id/tvCapacity"
+      android:gravity="center"
+      android:lines="1"
+      android:text="@string/m44"
+      android:textColor="@color/white1"
+      android:textSize="@dimen/x10" />
+
+  <ImageView
+      android:id="@+id/ivId1"
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x5"
+      android:background="@drawable/yuan" />
+
+  <ImageView
+      android:id="@+id/ivId2"
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x5"
+      android:background="@drawable/yuan" />
+
+  <ImageView
+      android:id="@+id/ivId3"
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x5"
+      android:background="@drawable/yuan" />
+
+  <ImageView
+      android:id="@+id/ivId4"
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x5"
+      android:background="@drawable/yuan" />
+
+  <ImageView
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x5"
+      android:background="@color/headerView" />
+ </RelativeLayout>
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/x30"
+     android:background="@color/gray_background"
+     android:text="@string/我的设备"
+     android:gravity="center_vertical"
+     android:paddingLeft="@dimen/x15"
+     android:textColor="@color/title_bg_white"
+     android:textSize="@dimen/size_content_title"
+     />
+ <View
+     android:id="@+id/relativeLayout1"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/x1"
+     android:background="#ededed"/>
+</LinearLayout>

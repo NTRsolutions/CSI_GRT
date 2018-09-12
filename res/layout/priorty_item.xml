@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x60"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/x45"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:background="@drawable/priority1" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x45"
+            android:gravity="center_vertical"
+            android:maxWidth="@dimen/x200"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="能源调度优先级"
+            android:textSize="@dimen/x14" />
+
+        <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/x16"
+        android:layout_height="@dimen/x20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:src="@drawable/frag4" />
+    </RelativeLayout>
+
+</RelativeLayout>

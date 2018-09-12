@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x150"
+    android:layout_height="@dimen/x105"
+    android:background="@drawable/edittext_bg"
+    android:orientation="vertical" >
+
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/bt1"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x35"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/title_2"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:textSize="@dimen/x13"
+        android:text="@string/Register_add_collector" />
+
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/bt2"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x35"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/x13"
+        android:textColor="@color/title_2"
+        android:text="@string/fragment1_popup_item2" />
+        <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/bt3"
+        android:layout_width="@dimen/x150"
+            android:paddingLeft="@dimen/x5"
+            android:paddingRight="@dimen/x5"
+        android:layout_height="@dimen/x35"
+        android:gravity="center"
+        android:layout_gravity="center"
+            android:textColor="@color/title_2"
+        android:textSize="@dimen/x13"
+        android:text="@string/AddPlantActivity_add_plant" />
+</LinearLayout>

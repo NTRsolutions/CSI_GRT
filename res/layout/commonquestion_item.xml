@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/y5"
+    android:paddingBottom="@dimen/y5"
+    android:layout_height="@dimen/y35" >
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/size_content"
+        android:textColor="@color/content_bg_white"
+        android:text="TextView"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/imageView1"
+        />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y10"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/frag4" />
+
+</RelativeLayout>

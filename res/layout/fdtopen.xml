@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/x10"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/x17"
+        android:text="@string/storageset_lithium_battery" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x25"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/edittext_bg"
+        android:maxEms="3"
+         android:textSize="@dimen/x13"
+        android:paddingLeft="@dimen/x3"
+        android:paddingTop="@dimen/x1"
+        android:paddingBottom="@dimen/x1"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:textSize="@dimen/x18"
+        android:layout_marginLeft="@dimen/x3"
+        android:text="V" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_below="@+id/textView1"
+        android:textColor="#333333"
+        android:text="  " />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:textColor="#333333"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:textSize="@dimen/x17"
+        android:layout_marginTop="@dimen/x10"
+        android:text="@string/storageset_lithium_mpp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x25"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="@dimen/x3"
+        android:textSize="@dimen/x13" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_marginLeft="@dimen/x3"
+        android:textSize="@dimen/x18"
+        android:text="V" />
+
+</RelativeLayout>

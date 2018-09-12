@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    android:orientation="vertical"
+    tools:context="com.growatt.shinephone.activity.AmendsActivity" >
+    <include layout="@layout/header_view_title" android:id="@+id/headerView"/>
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y25"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white1"
+            android:text="@string/修改手机号"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y30"
+            android:textSize="@dimen/size_content_title"
+            />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y25"
+            android:background="@drawable/edittext_bg_blue"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white1"
+            android:gravity="center"
+            android:textSize="@dimen/size_content_title"/>
+
+
+</LinearLayout>

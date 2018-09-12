@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/headerView"
+    >
+    <include layout="@layout/header_view_title" android:id="@+id/headerView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/m78当前服务器地址"
+                    android:textColor="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_11" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=":"
+                    android:textColor="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_11" />
+
+                <TextView
+                    android:id="@+id/tvUrl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_11" />
+            </LinearLayout>
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:layout_marginRight="@dimen/x3"
+                    android:src="@drawable/username" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_xml_username"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Login_username_hint"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:inputType="text"
+                    android:nextFocusForward="@+id/editText2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:layout_marginRight="@dimen/x3"
+                    android:src="@drawable/password" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_xml_password"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Login_password_hint"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:nextFocusForward="@+id/editText3"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:layout_marginRight="@dimen/x3"
+                    android:src="@drawable/password" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_xml_password2"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/重复输入密码"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:nextFocusForward="@+id/editText5"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x15"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:src="@drawable/register_email_icon" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/m83邮箱"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_email_no_blank"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:inputType="text"
+                    android:nextFocusForward="@+id/editText4"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:layout_marginRight="@dimen/x3"
+                    android:src="@drawable/register_phone_icon" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/autoFitTextView4"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/m82手机号"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_phone_no_blank"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:inputType="text"
+                    android:nextFocusForward="@+id/editText6"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <!--用户名-->
+            <LinearLayout
+                android:id="@+id/relative_agent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y18"
+                android:layout_marginTop="@dimen/y5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x15"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x3"
+                    android:src="@drawable/register_agent_icon" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_xml_agent"
+                    android:textColor="@color/content_bg_blue"
+                    android:textSize="@dimen/size_14" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="@string/userdata_message"
+                    android:lines="1"
+                    android:textColor="@color/content_bg_blue"
+                    android:textColorHint="@color/hint_bg_blue"
+                    android:textSize="@dimen/size_14"
+                    android:imeOptions="actionNext"
+                    android:imeActionLabel="@string/countryandcity_next"
+                    android:inputType="text"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/y13"
+                android:layout_marginTop="@dimen/y3"
+                android:background="@color/grid_bg_blue_50" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x60" >
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="@dimen/x170"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/x16"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/all_terms"/>
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView4"
+                    android:textColor="#ffffff"
+                    android:checked="true"
+                    android:scaleY="0.8"
+                    android:scaleX="0.8"
+                    android:button="@drawable/checkbox"
+                    android:textSize="@dimen/x12" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="@dimen/x5"
+                android:background="@drawable/btn_selector_whitetored"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:text="@string/countryandcity_next"
+                android:textSize="@dimen/size_16" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y200"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

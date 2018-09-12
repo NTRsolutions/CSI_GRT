@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    android:orientation="vertical"
+    tools:context="com.growatt.shinephone.activity.AddPlantActivity" >
+
+ <include
+     android:id="@+id/headerView"
+     layout="@layout/header_view_title" />
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x30" >
+
+        <RelativeLayout
+            android:id="@+id/power_r1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:background="@drawable/power_text_bg"
+            android:padding="@dimen/x5"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x100"
+            >
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:lines="1"
+                android:maxEms="10"
+                android:gravity="center"
+                android:textColor="#ffffff" 
+                android:background="@null"
+                android:textSize="@dimen/x13"
+                />
+        </RelativeLayout>
+
+     <com.growatt.shinephone.view.AutoFitTextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x20"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/powerstation_plantname"
+            android:textColor="#ffffff"
+            android:id="@+id/textView14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50" >
+
+        <RelativeLayout
+            android:id="@+id/power_r2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@drawable/power_text_bg"
+            android:padding="@dimen/x5" >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:lines="1"
+                android:maxEms="10"
+                android:textColor="#ffffff" 
+                android:background="@null"
+                android:textSize="@dimen/x13"
+                android:gravity="center"
+                />
+         
+        </RelativeLayout>
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x20"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/powerstation_installationdate"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50" >
+
+        <RelativeLayout
+            android:id="@+id/power_r3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@drawable/power_text_bg"
+            android:padding="@dimen/x5" >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="@string/countryandcity_select"
+                android:lines="1"
+                android:maxEms="10"
+                android:textColor="#ffffff" 
+                android:background="@null"
+                android:textSize="@dimen/x13"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+     <com.growatt.shinephone.view.AutoFitTextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x20"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/geographydata_country"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50" >
+
+        <RelativeLayout
+            android:id="@+id/power_r4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_marginLeft="@dimen/x100"
+            android:background="@drawable/power_text_bg"
+>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:lines="1"
+                android:maxEms="10"
+                android:textColor="#ffffff" 
+                android:background="@null"
+                android:textSize="@dimen/x13"
+                android:gravity="center"
+                />
+            
+        </RelativeLayout>
+
+         <com.growatt.shinephone.view.AutoFitTextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x20"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:text="@string/geographydata_timezone"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x38"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/all_ok"
+        android:textSize="@dimen/x14"
+        android:layout_marginTop="@dimen/x40"
+        />
+</LinearLayout>

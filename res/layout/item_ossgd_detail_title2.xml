@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--待接收头部开始-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_marginBottom="1px"
+        android:background="@color/title_bg_oss">
+
+        <ImageView
+            android:id="@+id/ivIcon2"
+            android:layout_width="@dimen/y20"
+            android:layout_height="@dimen/y20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/y3"
+            android:src="@drawable/ossgd_yuan_2" />
+
+        <View
+            android:id="@+id/lineUp21"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y15"
+            android:layout_marginLeft="@dimen/y13" />
+
+        <View
+            android:id="@+id/lineUp22"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/y15"
+            android:layout_below="@+id/lineUp21"
+            android:layout_marginLeft="@dimen/y13"
+            android:background="@color/oss_gd_yuan2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ivIcon2"
+            android:gravity="center"
+            android:text="服务中"
+            android:textColor="@color/title_bg_white"
+            android:textSize="@dimen/size_content_title" />
+        <ImageView
+            android:id="@+id/ivDown2"
+            android:layout_width="@dimen/x8"
+            android:layout_height="match_parent"
+            android:src="@drawable/ossgd_more_down"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            />
+        <ImageView
+            android:id="@+id/ivUp2"
+            android:layout_width="@dimen/x8"
+            android:layout_height="match_parent"
+            android:src="@drawable/ossgd_more_up"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>

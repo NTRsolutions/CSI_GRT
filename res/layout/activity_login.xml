@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_storage_gradient_3"
+    tools:context="com.growatt.shinephone.activity.LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/x285"
+            android:layout_height="@dimen/x37"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/logo2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/x16"
+                android:layout_height="@dimen/x16"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/username" />
+
+            <EditText
+                android:id="@+id/editText_username"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x35"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x11"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView1"
+                android:background="#00000000"
+                android:ems="10"
+                android:paddingLeft="@dimen/x5"
+                android:textColor="#ffffff"
+                android:textColorHint="#78ffffff"
+                android:hint="@string/Login_username_hint"
+                android:textSize="@dimen/x14"
+                android:imeOptions="actionNext"
+                android:imeActionLabel="@string/login"
+                android:inputType="text"
+                android:nextFocusForward="@+id/editText_pwd"
+                />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/x27"
+                android:layout_height="@dimen/x27"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:padding="@dimen/x6"
+                android:src="@drawable/delete"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="#78ffffff" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35"
+            android:layout_marginTop="@dimen/x10" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/x18"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/password" />
+
+            <EditText 
+                android:id="@+id/editText_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x35"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x11"
+                android:layout_toLeftOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView2"
+                android:background="#00000000"
+                android:ems="10"
+                android:paddingLeft="@dimen/x3"
+                android:textColor="#ffffff"
+                android:inputType="textPassword"
+                 android:textColorHint="#78ffffff"
+                android:hint="@string/Login_password_hint"
+                android:textSize="@dimen/x14"
+                android:imeOptions="actionNext"
+                android:imeActionLabel="@string/login"
+                />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/x27"
+                android:layout_height="@dimen/x27"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:padding="@dimen/x6"
+                android:src="@drawable/delete"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="#78ffffff" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x60" >
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="#00000000"
+                android:gravity="center|right"
+                android:text="@string/all_register"
+                android:textColor="@color/white_90"
+                android:textSize="@dimen/x13" />
+           <!-- android:text="@string/login_forgotpwd"-->
+            <Button
+                android:id="@+id/button_mimaback"
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/button_register"
+                android:layout_alignBottom="@+id/button_register"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x18"
+                android:text="@string/login_forgotpwd"
+                android:textColor="@color/white_90"
+                android:textSize="@dimen/x13"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/setServer"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="服务器"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:onClick="setSerVer"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/btn_selector_whitetored"
+            android:textColor="@color/oss_selector_textcolor_device"
+            android:text="@string/login"
+            android:textSize="@dimen/x17" />
+
+        <Button
+            android:id="@+id/button_mark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/btn_selector_yijian_regist"
+            android:text="@string/m24"
+            android:textColor="#ffffff"
+            android:visibility="visible"
+            android:textSize="@dimen/x17" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x10"
+            android:visibility="gone"
+            >
+          <EditText
+              android:id="@+id/etServer"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:layout_marginLeft="@dimen/x20"
+              android:background="@drawable/edittext_bg_stroke"
+              android:textSize="12dp"
+              android:textColor="#ffffff"
+              android:textColorHint="#78ffffff"
+              android:hint="oss服务器地址"
+              />
+            <Button
+                android:id="@+id/btnServer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_selector"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x17"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x30"
+            android:visibility="visible"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x10"
+        android:text="@string/login_demo"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x16"
+        android:visibility="visible"
+        android:background="#00000000"
+        />
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="@dimen/x40"
+        android:src="@drawable/icon_jiantou"
+        android:layout_toRightOf="@+id/button_demo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x10"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@color/blue_background"
+    tools:context="com.growatt.shinephone.activity.CountryandCityActivity" >
+    <include layout="@layout/header_view_title" android:id="@+id/headerView"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:layout_marginTop="@dimen/x20"
+            android:paddingLeft="@dimen/x5" >
+
+        <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@drawable/power_text_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:layout_marginLeft="@dimen/x10"
+                android:paddingLeft="@dimen/x4"
+                android:text="@string/countryandcity_select"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x14" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+                android:id="@+id/textView1"
+                android:layout_width="@dimen/x80"
+                android:layout_height="@dimen/x35"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/countryandcity_country"
+                android:layout_marginLeft="@dimen/x10"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:paddingLeft="@dimen/x5" >
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/power_text_bg"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="@string/CountryandCityAct_city_lonlat"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x10" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x35"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/countryandcity_city"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+    
+    
+<!--     <TextView
+    android:id="@+id/textview_regLng"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x35"
+    android:layout_marginLeft="@dimen/x10"
+    android:layout_marginRight="@dimen/x10"
+    android:layout_marginTop="@dimen/x20"
+    android:background="@drawable/power_text_bg"
+    android:gravity="center"
+    android:paddingLeft="@dimen/x4"
+    android:text="@string/register_xml_longandlat"
+    android:textColor="#ffffff"
+    android:textSize="@dimen/x14" /> -->
+</LinearLayout>

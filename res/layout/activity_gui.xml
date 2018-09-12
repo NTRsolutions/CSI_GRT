@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuiActivity" >
+ <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/guide_button"
+        android:layout_width="@dimen/x200"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/x60"
+        android:background="@drawable/gui_button"
+        android:padding="@dimen/x10"
+        android:visibility="gone"
+        android:text="@string/gui_come"
+        android:textColor="#11a7F3"
+        android:textSize="@dimen/x15" />
+
+</RelativeLayout>

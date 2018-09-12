@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x60"
+    android:orientation="horizontal" >
+  <TextView
+      android:id="@+id/tv_faqact_count" 
+      android:layout_width="@dimen/x20"  
+      android:layout_height="@dimen/x20"  
+      android:gravity="center"  
+      android:singleLine="true"  
+      android:textSize="@dimen/x12" 
+      android:textColor="#ffffff" 
+     android:layout_gravity="center_vertical"
+      android:background="@drawable/shape_inforcenter_corner"  
+      android:text="1"
+     /> 
+ <TextView 
+     android:id="@+id/tv_faqact_title"
+     android:layout_width="0dp"
+     android:layout_height="match_parent"
+     android:layout_weight="1"
+     android:layout_marginLeft="@dimen/x8"
+     android:layout_marginRight="@dimen/x8"
+     android:gravity="center_vertical"
+     android:textSize="@dimen/size_content"
+     />
+ <ImageView 
+     android:layout_width="@dimen/x20"  
+      android:layout_height="@dimen/x20"  
+       android:layout_gravity="center_vertical"
+      android:src="@drawable/frag4"
+     />
+</LinearLayout>

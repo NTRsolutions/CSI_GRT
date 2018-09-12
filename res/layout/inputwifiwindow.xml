@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/x10"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_height="@dimen/x180" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="@string/register_xml_password" />
+
+        <EditText
+            android:id="@+id/editText_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x36"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:paddingLeft="@dimen/x5"
+            android:text="12345678"
+            android:layout_marginRight="@dimen/x10"
+            android:textSize="@dimen/x14" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x36"
+        android:layout_margin="@dimen/x10"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x15"
+        android:background="@drawable/btn_selector"
+        android:text="@string/wifilist_refresh" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x36"
+        android:layout_margin="@dimen/x10"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x15"
+        android:background="@drawable/btn_selector"
+        android:text="@string/soft_update_cancel" />
+
+</LinearLayout>

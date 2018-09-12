@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/x5"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/frame"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/x68" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" >
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView1"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/x12"
+                            android:text="@string/rizhi_SN"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true" />
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_alignBottom="@+id/textView1"
+                            android:layout_marginLeft="@dimen/x3"
+                            android:layout_toRightOf="@+id/textView1"
+                            android:textSize="@dimen/x12"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                       android:layout_weight="1"
+                        android:layout_height="match_parent"  >
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView2"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:textSize="@dimen/x12"
+                            android:text="@string/rizhi_evenno" />
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/x12"
+                            android:layout_toRightOf="@+id/textView2"
+                            android:layout_marginLeft="@dimen/x3"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                      android:layout_weight="1"
+                        android:layout_height="match_parent" >
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView3"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:textSize="@dimen/x12"
+                            android:text="@string/rizhi_type" />
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView3"
+                            android:textSize="@dimen/x12"
+                            android:layout_marginLeft="@dimen/x3"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"  >
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView4"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:textSize="@dimen/x12"
+                            android:text="@string/rizhi_tag" />
+
+                        <com.growatt.shinephone.view.AutoFitTextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x20"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/textView4"
+                            android:textSize="@dimen/x12"
+                            android:layout_marginLeft="@dimen/x3"
+                            android:text="" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:background="#ffffff"
+                android:padding="@dimen/x5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#78aaaaaa"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x36" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:text="2016-03-23 16:31" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

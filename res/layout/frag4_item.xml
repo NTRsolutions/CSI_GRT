@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x55" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x55" >
+   
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/x40"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x10" />
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x22"
+        android:textSize="@dimen/x16"
+        android:textColor="#333333"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x11"
+        android:src="@drawable/frag4" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frad_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/r1"
+        android:background="#dedede"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+</RelativeLayout>

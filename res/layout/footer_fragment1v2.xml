@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ivAddDatalog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:src="@drawable/select_fragment1v2_footer"
+        android:layout_marginTop="@dimen/y15"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Register_add_collector"
+        android:gravity="center"
+        android:textSize="@dimen/size_content_11"
+        android:textColor="@color/content_bg_white"
+        />
+    <Button
+        android:id="@+id/btnDatalogList"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x35"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30"
+        android:textColor="@color/white1"
+        android:text="@string/dataloggers_title"
+        android:textSize="@dimen/size_content_11"
+        android:background="@drawable/select_fragment1v2_help"
+        />
+</LinearLayout>

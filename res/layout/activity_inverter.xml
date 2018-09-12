@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context=".InverterActivity">
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x170"
+        android:background="@drawable/bg_storage_gradient_3"
+        android:paddingBottom="@dimen/x15">
+
+        <com.growatt.shinephone.tool.RoundProgressBar
+            android:id="@+id/roundProgressBar1"
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/x130"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:roundWidth="@dimen/x15"
+            app:roundColor="#a41a2b"
+            app:roundProgressColor="@color/white1"
+            />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/x89"
+            android:layout_height="@dimen/x20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center_vertical"
+            android:text="@string/inverter_todayquantity"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/x89"
+            android:layout_height="@dimen/x23"
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_marginLeft="@dimen/x10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x18" />
+
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center_vertical|right"
+            android:text="@string/inverter_allquantity"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/x95"
+            android:layout_height="@dimen/x23"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_marginRight="@dimen/x10"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x17" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/inverter_linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxWidth="@dimen/x85"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/x21" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="w"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/x20" />
+            </LinearLayout>
+
+            <com.growatt.shinephone.view.AutoFitTextView
+                android:layout_width="@dimen/x90"
+                android:layout_height="@dimen/x20"
+                android:layout_below="@+id/inverter_linearlayout"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/InverterAct_current_power"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x12" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:orientation="horizontal" 
+       android:layout_marginLeft="@dimen/x5"
+       android:layout_marginRight="@dimen/x5"
+        >
+         <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x25"
+             android:layout_gravity="bottom"
+             android:layout_weight="1"
+             android:gravity="bottom"
+           android:textColor="@color/title_1"
+        android:text="@string/inverter_unit"
+        android:textSize="16sp" />
+        <TextView
+        android:id="@+id/tvXY"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+            android:textColor="@color/line_color"
+        android:textSize="14sp"
+        />  
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/chartsview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+               <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_weight="1.11" >-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:visibility="gone" />-->
+    <!--</LinearLayout>-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.11"
+        />
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/xy_grid_st"
+        android:layout_marginTop="5dp"
+        >
+    </RelativeLayout>
+
+    <include layout="@layout/footer_device_server"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background"
+    tools:context="com.growatt.shinephone.ossactivity.OssSetTimeActivity">
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:textColor="@color/content_bg_blue"
+        android:textSize="@dimen/size_content_title"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/y30"
+        />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvDate"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y25"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_bg_stroke"
+            android:text=""
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_content_title"
+            android:gravity="center"
+            />
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvTime"
+            android:layout_width="@dimen/x150"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_bg_stroke"
+            android:text=""
+            android:textColor="@color/content_bg_blue"
+            android:textSize="@dimen/size_content_title"
+            android:gravity="center"
+            />
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y25"
+        android:layout_marginTop="@dimen/y15"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:text="@string/all_ok"
+        android:textSize="@dimen/size_content"
+        />
+</LinearLayout>

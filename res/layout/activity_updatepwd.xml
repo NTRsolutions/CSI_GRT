@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    tools:context=".UpdatepwdActivity" >
+    <include layout="@layout/header_view_title" android:id="@+id/headerView"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headerView"
+        android:layout_marginTop="@dimen/x30"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="@dimen/x65"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x25"
+                android:textColor="@color/white1"
+                android:text="@string/updatepwd_oldpwd" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x38"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@drawable/edittext_bg_blue"
+                android:ems="10"
+                android:paddingLeft="@dimen/x4" 
+                android:inputType="textPassword"
+                android:textColor="@color/white1"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50" >
+
+            <TextView
+                android:id="@+id/textView2"
+                 android:layout_width="@dimen/x65"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x25"
+                android:textColor="@color/white1"
+                android:text="@string/updatepwd_newpwd" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x38"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/textView2"
+                android:background="@drawable/edittext_bg_blue"
+                android:ems="10"
+                android:paddingLeft="@dimen/x4" 
+                android:inputType="textPassword"
+                android:textColor="@color/white1"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50" >
+
+            <TextView
+                android:id="@+id/textView3"
+                 android:layout_width="@dimen/x65"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x25"
+                android:textColor="@color/white1"
+                android:text="@string/updatepwd_newpwd" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x38"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_toRightOf="@+id/textView3"
+                android:background="@drawable/edittext_bg_blue"
+                android:ems="10"
+                android:paddingLeft="@dimen/x4"
+                android:inputType="textPassword"
+                android:textColor="@color/white1"
+                 >
+
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

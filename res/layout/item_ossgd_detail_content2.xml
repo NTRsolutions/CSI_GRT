@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/lineContent2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/y13"
+        android:background="@color/oss_gd_yuan2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--第一行开始-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNoteContent211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvNoteContent212"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="定位"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <com.growatt.shinephone.view.AutoFitTextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_note" />
+
+                <Button
+                    android:id="@+id/btnLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:text="@string/PutinActivity_search"
+                    android:textSize="@dimen/size_content" />
+            </LinearLayout>
+            <!--第一行结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grid_bg_white" />
+            <!--第二行开始-->
+            <LinearLayout
+                android:id="@+id/llCompleteTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNoteContent221"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvNoteContent222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="完成时间"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvCompleteTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:gravity="center_vertical"
+                    android:text="2017-06-20"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+            </LinearLayout>
+            <!--第二行结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grid_bg_white" />
+            <!--第+1行开始-->
+            <LinearLayout
+                android:id="@+id/llDeviceType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="horizontal">
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="*"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/size_content_title"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tvNoteContent231"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/dataloggers_list_type"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvDevice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/all_interver"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <ImageView
+                    android:layout_width="@dimen/x4"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/select_icon" />
+            </LinearLayout>
+            <!--第+1行结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grid_bg_white" />
+            <!--第+2行开始-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:layout_marginLeft="@dimen/x5"
+                android:orientation="horizontal">
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="*"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/size_content_title"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tvNoteContent241"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/dataloggers_list_serial"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <EditText
+                    android:id="@+id/etDeviceSN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+            </LinearLayout>
+            <!--第+2行结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grid_bg_white" />
+            <!--第三行开始-->
+            <LinearLayout
+                android:id="@+id/llCompleteType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNoteContent251"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvNoteContent252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="完成状态"
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/note_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <TextView
+                    android:id="@+id/tvCompleteType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/content_bg_white"
+                    android:textSize="@dimen/size_content_title" />
+
+                <ImageView
+                    android:layout_width="@dimen/x4"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/select_icon" />
+            </LinearLayout>
+            <!--第三行结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grid_bg_white" />
+
+            <LinearLayout
+                android:id="@+id/llContentPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--第四行开始-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNoteContent261"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="上传照片"
+                        android:textColor="@color/content_bg_white"
+                        android:textSize="@dimen/size_content_title" />
+                </LinearLayout>
+                <!--第四行结束-->
+                <!--第五行开始-->
+                <LinearLayout
+                    android:id="@+id/llFieldService"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNoteContent271"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_content_title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="报告单"
+                        android:textColor="@color/note_bg_white"
+                        android:textSize="@dimen/size_note" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x23"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:src="@drawable/oss_pic_icon" />
+                </LinearLayout>
+                <!--第五行结束-->
+                <!--第六行开始-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleViewField2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y30"
+                    android:layout_margin="@dimen/x5"
+                    android:background="@drawable/dotted_line" />
+                <!--第六行结束-->
+                <!--第七行开始-->
+                <LinearLayout
+                    android:id="@+id/llOtherServices"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y15"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="其他现场照片"
+                        android:textColor="@color/note_bg_white"
+                        android:textSize="@dimen/size_note" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x23"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:src="@drawable/oss_pic_icon" />
+                </LinearLayout>
+                <!--第七行结束-->
+                <!--第八行开始-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleViewOther2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y30"
+                    android:layout_margin="@dimen/x5"
+                    android:background="@drawable/dotted_line" />
+                <!--第八行结束-->
+            </LinearLayout>
+        </LinearLayout>
+        <!--第+1行开始-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:minHeight="@dimen/y20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/note_bg_white"
+                android:textSize="@dimen/size_content_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/note_bg_white"
+                android:textSize="@dimen/size_content_title" />
+
+            <TextView
+                android:id="@+id/tvRemarks2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y5"
+                android:layout_marginLeft="@dimen/x5"
+                android:text=""
+                android:textColor="@color/note_bg_white"
+                android:textSize="@dimen/size_content" />
+        </LinearLayout>
+        <!--第+1行结束-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grid_bg_white" />
+        <!--第九行开始-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNoteContent281"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:gravity="center"
+                android:text="添加备注"
+                android:textColor="@color/content_bg_white"
+                android:textSize="@dimen/size_content_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y20"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/note_bg_white"
+                android:textSize="@dimen/size_content_title" />
+
+            <EditText
+                android:id="@+id/etRemarks2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y5"
+                android:layout_marginLeft="@dimen/x5"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/content_bg_white"
+                android:textColorHint="@color/note_bg_white"
+                android:textSize="@dimen/size_content" />
+        </LinearLayout>
+        <!--第九行结束-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grid_bg_white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y50">
+
+            <Button
+                android:id="@+id/btnFinish2"
+                android:layout_width="@dimen/x150"
+                android:layout_height="@dimen/y22"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_circle_btn_blue"
+                android:text="@string/about_cache_ok"
+                android:textColor="@color/content_bg_blue"
+                android:textSize="@dimen/size_content_title" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

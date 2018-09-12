@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/headerView">
+
+        <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/fragment2_title"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x18" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x46">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/fragment2_title_left"
+                android:textColor="@color/text_ic_tab_selector"
+                android:textSize="@dimen/x16" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/fragment2_title_right"
+                android:textColor="@color/text_ic_tab_selector"
+                android:textSize="@dimen/x16" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="@dimen/x2" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="@dimen/x2"
+        android:background="@color/headerView"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+         android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/headerView"
+        android:layout_height="@dimen/x2"
+        android:text="" />
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#78cccccc" >
+</RelativeLayout>
+
+      <ListView
+        android:id="@+id/listView1"
+        android:dividerHeight="0.5dp"
+        android:divider="#78cccccc"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#78cccccc" >
+</RelativeLayout>
+</LinearLayout>

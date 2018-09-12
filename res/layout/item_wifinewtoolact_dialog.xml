@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/x10"
+    android:orientation="vertical" >
+  <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/dataloggers_add_success"
+      android:gravity="center"
+      android:textSize="@dimen/x18"
+      />  
+    <TextView 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/all_success_reminder"
+      android:gravity="center"
+      android:textSize="@dimen/x13"
+      />   
+</LinearLayout>

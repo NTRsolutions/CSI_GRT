@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:orientation="horizontal"
+    android:background="@color/headerView"  >
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/tvLeft"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x20"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/x15"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        />
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x30"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x18" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvRight"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x20"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/x15"
+            android:textColor="#ffffff"
+            />
+
+</LinearLayout>

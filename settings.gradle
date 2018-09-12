@@ -1,0 +1,3 @@
+include ':baseadapter-recyclerview', ':base-adapter-library', ':circledialog', ':MPChartLib'
+include ':materiallayoutmaster'
+include ':materiallayoutmaster'

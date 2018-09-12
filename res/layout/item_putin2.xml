@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/y35"
+    android:layout_height="@dimen/y35"
+    android:layout_marginRight="@dimen/x2"
+    android:layout_marginLeft="@dimen/x2"
+    >
+   <ImageView
+       android:id="@+id/ivPhoto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="@dimen/y10"
+        android:layout_height="@dimen/y10"
+        android:src="@drawable/oss_cancel_icon"
+        android:layout_gravity="right"
+        />
+</FrameLayout>

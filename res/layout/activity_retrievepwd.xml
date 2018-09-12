@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background"
+    tools:context=".RetrievepwdActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_height="@dimen/x50"
+        android:layout_width="@dimen/x200"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:text="@string/retrievepwd_xml_email"
+        android:textSize="@dimen/x15" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/x200"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/x50"
+        android:text="@string/retrievepwd_xml_sn"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:textSize="@dimen/x15" />
+
+</LinearLayout>

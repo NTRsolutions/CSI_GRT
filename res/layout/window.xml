@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x20"
+        android:text="@string/window_text1"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/x16" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="@dimen/x37"
+        android:layout_marginBottom="@dimen/x10"
+        android:text="@string/window_text2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/x38"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_selector"
+        android:text="@string/WifiNewtoolAct_stop_config"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/x16" />
+
+</RelativeLayout>

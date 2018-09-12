@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/x45"
+        android:layout_height="@dimen/x45"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="#666666"
+      	/>
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/x110"
+        android:layout_height="@dimen/x20"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="日：50Kw/h"
+        android:textSize="@dimen/x12"
+        android:layout_marginLeft="@dimen/x20"
+        android:textColor="#666666" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/x16"
+        android:layout_height="@dimen/x20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/frag4" />
+
+    <com.growatt.shinephone.view.AutoFitTextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x20"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_marginLeft="@dimen/x135"
+        android:textColor="#666666"
+        android:textSize="@dimen/x12"
+        android:text="月：500Kw/h" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/imageView1"
+        android:text="123"
+        android:textSize="@dimen/x14" />
+
+</RelativeLayout>

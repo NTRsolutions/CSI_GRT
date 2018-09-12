@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:background="@color/gray_background"
+        android:text="@string/示范设备"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x15"
+        android:textColor="@color/title_bg_white"
+        android:textSize="@dimen/size_content_title"
+        />
+    <include layout="@layout/item_frg1_device_inverter" android:id="@+id/fl_demo1"/>
+    <include layout="@layout/item_frg1_device_storage" android:id="@+id/fl_demo4"/>
+    <include layout="@layout/item_frg1_device_inverter" android:id="@+id/fl_demo2"/>
+    <include layout="@layout/item_frg1_device_storage" android:id="@+id/fl_demo3"/>
+</LinearLayout>

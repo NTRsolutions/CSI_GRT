@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    tools:context="com.growatt.shinephone.activity.CalendarActivity" >
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+
+
+    <com.growatt.shinephone.ui.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerView"
+        android:layout_marginTop="@dimen/x60" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x40"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/headerView"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginTop="@dimen/x12"
+        android:background="@drawable/btn_selector"
+        android:text="@string/calendar_upper" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x40"
+        android:background="@drawable/btn_selector"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginRight="@dimen/x17"
+        android:textColor="#ffffff"
+        android:text="@string/calendar_lower" />
+
+</RelativeLayout>

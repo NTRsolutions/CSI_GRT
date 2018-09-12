@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.growatt.shinephone.ossactivity.OssJKActivity">
+    <include android:id="@+id/headerView" layout="@layout/header_view" />
+    <ImageView
+        android:id="@+id/ivOssJkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x110"
+        android:src="@drawable/oss_title"
+        android:scaleType="fitXY"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--设备管理-->
+            <LinearLayout
+                android:id="@+id/llJKDevice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:background="@drawable/item_click_whitetogray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ossjk_device_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/设备管理"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_head_title"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/x15"
+                    android:layout_height="@dimen/y10"
+                    android:layout_gravity="center"
+                    android:src="@drawable/oss_kefu_more" />
+            </LinearLayout>
+            <!--设备管理内容-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewDevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ossjk_frame"
+                android:padding="@dimen/x6"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y103"
+                android:background="@drawable/ossjk_frame"
+                android:layout_marginTop="@dimen/y3"
+                android:paddingTop="@dimen/y5"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:paddingBottom="@dimen/y8"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/ll_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/y20"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:text="已接入逆变器总数:"
+                     android:gravity="center_vertical"
+                     android:textSize="@dimen/size_16"
+                     android:textColor="@color/headerView"
+                     />
+                    <TextView
+                        android:id="@+id/tvInvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/size_16"
+                        android:textColor="@color/headerView"
+                        />
+                </LinearLayout>
+                <include layout="@layout/item_oss_jkmain_inv" android:id="@+id/invLayout"/>
+            </LinearLayout>
+            <!--问题管理-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ossjk_workorder" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="问题管理"
+                    android:textColor="@color/title_bg_white"
+                    android:textSize="@dimen/size_head_title"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/x10"
+                    android:layout_height="@dimen/y10"
+                    android:layout_gravity="center"
+                    android:src="@drawable/oss_more" />
+            </LinearLayout>
+            <!--问题管理内容-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewQues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

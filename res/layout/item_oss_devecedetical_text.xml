@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y40"
+    android:background="@drawable/item_click_whitetogray"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/y40">
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dataloggers_list_serial"
+            android:textColor="@color/headerView_text"
+            android:textSize="@dimen/size_content_small" />
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/y5"
+            android:text=""
+            android:gravity="center"
+            android:textSize="@dimen/size_content_small"
+            android:textColor="@color/title_bg_white"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/title_bg_oss"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/title_bg_oss"
+        />
+</LinearLayout>

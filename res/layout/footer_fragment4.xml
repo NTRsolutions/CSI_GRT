@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/logout"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x38"
+        android:background="@drawable/btn_selector"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/fragment4_logout"
+         android:textSize="@dimen/x14"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginBottom="@dimen/x30"
+        />
+
+</LinearLayout>

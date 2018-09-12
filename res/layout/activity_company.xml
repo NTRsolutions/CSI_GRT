@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    tools:context="com.growatt.shinephone.CompanyActivity" >
+ <include 
+     android:id="@+id/headerView"
+     layout="@layout/header_view"
+     />
+	  <ProgressBar
+     android:id="@+id/progressBar1"
+     style="?android:attr/progressBarStyleHorizontal"
+     android:layout_width="match_parent"
+     android:layout_height="3dip"
+     android:progressDrawable="@drawable/bg_progressbar"
+android:visibility="gone"
+     />
+ <LinearLayout 
+      android:id="@+id/llContainer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+         />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".DatalogCheckActivity" >
+    <requestFocus />
+    <include layout="@layout/header_view" android:id="@+id/headerView"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x20"
+        android:paddingRight="@dimen/x5"
+        android:paddingLeft="@dimen/x5" >
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x35"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="@string/all_collectornumber"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/power_text_bg"
+            android:lines="1"
+            android:paddingLeft="@dimen/x4"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_marginTop="@dimen/x20"
+        android:paddingRight="@dimen/x5"
+        android:paddingLeft="@dimen/x5"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x35"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="@string/all_collectorverificationnumber"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/power_text_bg"
+            android:lines="1"
+            android:paddingLeft="@dimen/x4"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/x14" >
+        </EditText>
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y30"
+        android:layout_marginTop="@dimen/x5"
+       	android:layout_marginLeft="@dimen/x10"
+       	android:layout_marginRight="@dimen/x10"
+       	android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:text="@string/all_twodimension" />
+   <Button
+        android:id="@+id/register"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/y30"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_selector_whitetored"
+        android:textColor="@color/oss_selector_textcolor_device"
+        android:text="@string/all_register"
+        />
+</LinearLayout>

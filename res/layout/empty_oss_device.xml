@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/llServer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x30"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/edittext_bg_strokeblue"
+        >
+
+        <com.growatt.shinephone.view.AutoFitTextView
+            android:id="@+id/tvServer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="@string/m79点击获取服务器地址"
+            android:textColor="@color/headerView"
+            android:textSize="@dimen/size_note" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:gravity="center"
+        android:text="选择搜索类型"
+        android:textColor="@color/content_bg_white"
+        android:textSize="@dimen/size_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x25"
+            android:layout_margin="@dimen/x5"
+            android:orientation="horizontal">
+            @
+
+            <RadioButton
+                android:id="@+id/radioGroup1_rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/powerstation_plantname"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+
+            <RadioButton
+                android:id="@+id/radioGroup1_rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/register_xml_username"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+
+            <RadioButton
+                android:id="@+id/radioGroup1_rb3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/register_xml_phone"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+
+            <RadioButton
+                android:id="@+id/radioGroup1_rb4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x5"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_weight="1"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/register_xml_email"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x25"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioGroup2_rb1"
+                android:layout_width="@dimen/x70"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:background="@drawable/oss_selector_bg_device"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/all_interver"
+                android:textSize="@dimen/size_note" />
+
+            <RadioButton
+                android:id="@+id/radioGroup2_rb2"
+                android:layout_width="@dimen/x70"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="@string/all_storage"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+
+            <RadioButton
+                android:id="@+id/radioGroup2_rb3"
+                android:layout_width="@dimen/x70"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginRight="@dimen/x15"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:text="采集器"
+                android:textColor="@color/oss_selector_textcolor_device"
+                android:textSize="@dimen/size_note" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        >
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radioGroup3_rb1"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/dataloggers_list_serial"
+                android:checked="true"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+            <RadioButton
+                android:id="@+id/radioGroup3_rb2"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/inverterdevicedata_alias"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/x90"
+            android:visibility="invisible"
+            >
+            <RadioButton
+                android:id="@+id/radioGroup4_rb1"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/dataloggers_list_serial"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+            <RadioButton
+                android:id="@+id/radioGroup4_rb2"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/inverterdevicedata_alias"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/x180"
+            android:visibility="invisible"
+            >
+            <RadioButton
+                android:id="@+id/radioGroup5_rb1"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/dataloggers_list_serial"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+            <RadioButton
+                android:id="@+id/radioGroup5_rb2"
+                android:layout_width="@dimen/x55"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/oss_selector_bg_device"
+                android:button="@null"
+                android:text="@string/inverterdevicedata_alias"
+                android:textSize="@dimen/size_grid"
+                android:gravity="center"
+                android:paddingLeft="@dimen/x5"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/oss_selector_textcolor_device" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>
