@@ -177,7 +177,7 @@ public class MobileRegisterActivity extends DoActivity {
                         toast(R.string.DatalogCheckActivity_regist_success);
                         String type=jsonObject.get("datalogType").toString();
                         type=type.toLowerCase();
-                        if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)){
+                        if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)|| type.contains(Constant.WIFI_TYPE_CSIWIFI)){
                             MyUtils.configWifi(MobileRegisterActivity.this,type,"1",sn);
                         }else {
                             MyControl.autoLogin(MobileRegisterActivity.this, phone,pwd);

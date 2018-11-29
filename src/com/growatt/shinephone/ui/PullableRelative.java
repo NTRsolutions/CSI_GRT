@@ -34,7 +34,7 @@ public class PullableRelative extends RelativeLayout implements Pullable
 	public boolean canPullUp()
 	{
 		/**
-		 * 改成true是启动加载更多功能的
+		 * 鏀规垚true鏄惎鍔ㄥ姞杞芥洿澶氬姛鑳界殑
 		 */
 		return false;
 	}

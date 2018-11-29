@@ -738,7 +738,7 @@
     <string name="PlayAct_cache_success">缓存成功</string>
     <string name="是否保存视频">是否保存视频?</string>
      <string name="datalogcheck_check_no_datalog_server">服务器与所属国家不匹配</string>
-     <string name="fragment4_shinewifi">ShineWiFi配置</string>
+     <string name="fragment4_shinewifi">采集器配置</string>
      <string name="user_islogout">是否退出当前账户?</string>
      <string name="utf_open_gprs">未开启定位服务</string>
      <string name="是否跳转界面进行设置">是否跳转到“设置”界面进行设置?</string>

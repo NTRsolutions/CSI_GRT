@@ -6,7 +6,7 @@ import com.android.volley.Response.Listener;
 import com.android.volley.toolbox.StringRequest;
 import com.growatt.shinephone.activity.ShineApplication;
 /**
- * ÍøÂç·ÃÎÊ¹¤¾ßÀà
+ * ç½‘ç»œè®¿é—®å·¥å…·ç±»
  * @author gai
  *
  */

@@ -66,8 +66,7 @@ public class UpdateClass {
         ServerError,
         EndLogin
     }
-	
-	/* 构�?�方�? */
+
 	public UpdateClass() {
 
 	}
@@ -110,16 +109,12 @@ public class UpdateClass {
 		double[] arr = new double[2];
 		double lat = 0;
 		double lon = 0;
-        FileInputStream inputStream=null; 
-        //获得XmlPullParser解析�?
+        FileInputStream inputStream=null;
         XmlPullParser xmlParser = Xml.newPullParser(); 
         try {
-            //得到文件流，并设置编码方�?
         	inputStream = new FileInputStream(xmlFileName);
             xmlParser.setInput(inputStream, "utf-8");
-            //获得解析到的事件类别，这里有�?始文档，结束文档，开始标签，结束标签，文本等等事件�??
             int evtType=xmlParser.getEventType();
-         //�?直循环，直到文档结束 
          while(evtType!=XmlPullParser.END_DOCUMENT){ 
             switch(evtType){ 
             case XmlPullParser.START_DOCUMENT:
@@ -155,7 +150,6 @@ public class UpdateClass {
     }
 	
 	/**
-	 * 取前六位字符�?
 	 * 
 	 * @author Administrator
 	 * @throws IOException 
@@ -344,16 +338,12 @@ public class UpdateClass {
 				return serverAddress;
 			}
 			
-		    FileInputStream inputStream=null; 
-	        //获得XmlPullParser解析�?
+		    FileInputStream inputStream=null;
 	        XmlPullParser xmlParser = Xml.newPullParser(); 
 	        try {
-	            //得到文件流，并设置编码方�?
 	        	inputStream = new FileInputStream(DIR + xmlFileName2);
 	            xmlParser.setInput(inputStream, "utf-8");
-	            //获得解析到的事件类别，这里有�?始文档，结束文档，开始标签，结束标签，文本等等事件�??
 	            int evtType=xmlParser.getEventType();
-	         //�?直循环，直到文档结束 
 	         while(evtType!=XmlPullParser.END_DOCUMENT){ 
 	            switch(evtType){ 
 	            case XmlPullParser.START_DOCUMENT:

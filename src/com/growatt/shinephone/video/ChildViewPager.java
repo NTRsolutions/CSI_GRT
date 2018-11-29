@@ -15,7 +15,7 @@ public class ChildViewPager extends ViewPager{
 		         }  
 		         public boolean dispatchTouchEvent(MotionEvent ev) {  
 
-		          //ÏÂÃæÕâ¾ä»°µÄ×÷ÓÃ ¸æËß¸¸view£¬ÎÒµÄµ¥»÷ÊÂ¼şÎÒ×ÔĞĞ´¦Àí£¬²»Òª×è°­ÎÒ¡£
+		          //ä¸‹é¢è¿™å¥è¯çš„ä½œç”¨ å‘Šè¯‰çˆ¶viewï¼Œæˆ‘çš„å•å‡»äº‹ä»¶æˆ‘è‡ªè¡Œå¤„ç†ï¼Œä¸è¦é˜»ç¢æˆ‘ã€‚
 
 		            getParent().requestDisallowInterceptTouchEvent(true);
 		            return super.dispatchTouchEvent(ev); 

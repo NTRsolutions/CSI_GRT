@@ -82,7 +82,7 @@ public class ShineWifiSetActivity extends DoActivity {
 	}
 
 	private void jumpWifiConfig(String sn, Map<String, Object> map) {
-		Class clazz = null;
+	/*	Class clazz = null;
 		if (radioGroup.getCheckedRadioButtonId() == R.id.radio_button2){
             clazz = NewWifiS2ConfigActivity.class;
             LogUtil.i("ShineWifiSet:"+"NewWifiS2ConfigActivity");
@@ -92,7 +92,8 @@ public class ShineWifiSetActivity extends DoActivity {
 			toast(R.string.m179请选择采集器类型);
 			return;
 		}
-		Intent intent=new Intent(ShineWifiSetActivity.this,clazz);
+		Intent intent=new Intent(ShineWifiSetActivity.this,clazz);*/
+		Intent intent=new Intent(ShineWifiSetActivity.this,NewWifiS2ConfigActivity.class);
 		Bundle bundle=new Bundle();
 		bundle.putString("type","100");
 		bundle.putString("id",sn);

@@ -21,7 +21,7 @@ public class StorageDialog {
 //				}
 //			}
 //		});
-//		textView.setText(time+"£º__:__");
+//		textView.setText(time+"ï¼š__:__");
 //		final GridView gridView=(GridView)view.findViewById(R.id.gridView1);
 //		StorageAdapter adapter=new StorageAdapter(context,hours);
 //		gridView.setAdapter(adapter);
@@ -33,7 +33,7 @@ public class StorageDialog {
 //				if(flag==true){
 //					flag=false;
 //					Cons.hour=hours[position];
-//					textView.setText(time+"£º"+Cons.hour+":__");
+//					textView.setText(time+"ï¼š"+Cons.hour+":__");
 //					StorageAdapter adapter=new StorageAdapter(context,mins);
 //					gridView.setAdapter(adapter);
 //				}else{
@@ -45,7 +45,7 @@ public class StorageDialog {
 //					}
 //					if(StorageSetActivity.dialogtime.isShowing()){
 //						StorageSetActivity.dialogtime.dismiss();
-//						T.make(time+"£º"+Cons.hour+":"+Cons.min);
+//						T.make(time+"ï¼š"+Cons.hour+":"+Cons.min);
 //					}
 //				}
 //			}

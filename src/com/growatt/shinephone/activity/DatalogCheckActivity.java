@@ -115,7 +115,7 @@ public class DatalogCheckActivity extends DoActivity {
 								if(msg.equals("200")){
 									toast(R.string.DatalogCheckActivity_regist_success);
 									String type = jsonObject.get("datalogType").toString().toLowerCase();
-									if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)){
+									if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)|| type.contains(Constant.WIFI_TYPE_CSIWIFI)){
 										MyUtils.configWifi(DatalogCheckActivity.this,type,"1",et1.getText().toString().trim());
 									}else {
 										MyControl.autoLogin(DatalogCheckActivity.this,Cons.regMap.getRegUserName(),Cons.regMap.getRegPassword());

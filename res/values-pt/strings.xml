@@ -738,7 +738,7 @@
     <string name="PlayAct_cache_success">Cache com sucesso</string>
     <string name="是否保存视频">Salvar o vídeo?</string>
      <string name="datalogcheck_check_no_datalog_server">Endereço CSI-Server e país não correspondem</string>
-     <string name="fragment4_shinewifi">Configuração CSI-WiFi</string>
+     <string name="fragment4_shinewifi">Configuração Datalogger</string>
      <string name="user_islogout">Sair?</string>
      <string name="utf_open_gprs">GPS desativado</string>
      <string name="是否跳转界面进行设置">Voltar à página "Configurações"?</string>

@@ -29,13 +29,13 @@ public class MyListAdapter extends BaseAdapter
     }
     @Override
     public int getCount() {
-	// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+	// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 	return items.size();
     }
 
     @Override
     public Object getItem(int position) {
-	// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+	// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 	return items.get(position);
     }
 	@Override
@@ -46,7 +46,7 @@ public class MyListAdapter extends BaseAdapter
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-	// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+	// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 	ViewHolder holder;
 	if(convertView==null)
 	{
@@ -90,11 +90,11 @@ public class MyListAdapter extends BaseAdapter
 		{
 		    item.setChecked(false);
 		}
-		//»Øµ÷·½·¨£¬½²item¼ÓÈëÒÑÑ¡ÔñµÄ
+		//å›è°ƒæ–¹æ³•ï¼Œè®²itemåŠ å…¥å·²é€‰æ‹©çš„
 		onShowItemClickListener.onShowItemClick(item);
 	    }
 	});
-	//¼àÌıºóÉèÖÃÑ¡Ôñ×´Ì¬
+	//ç›‘å¬åè®¾ç½®é€‰æ‹©çŠ¶æ€
 	holder.cb.setChecked(item.isChecked());
 	return convertView;
     }

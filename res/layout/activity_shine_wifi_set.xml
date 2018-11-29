@@ -64,6 +64,7 @@
         android:layout_marginLeft="@dimen/x10"
         android:layout_marginRight="@dimen/x10"
         android:layout_marginTop="@dimen/y5"
+        android:visibility="gone"
         >
       <RadioButton
           android:id="@+id/radio_button1"

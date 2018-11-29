@@ -38,18 +38,18 @@ public class MyLetterView extends View{
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
-		//×Ô¶¨ÒåView·ÖÅä¸øÃ¿¸ö×Ö·û´®µÄ¸ß¶È
+		//è‡ªå®šä¹‰Viewåˆ†é…ç»™æ¯ä¸ªå­—ç¬¦ä¸²çš„é«˜åº¦
 		int height = getHeight() / letters.length;
-		//×Ô¶¨ÒåView·ÖÅä¸øÃ¿¸ö×Ö·û´®µÄ¿í¶È
+		//è‡ªå®šä¹‰Viewåˆ†é…ç»™æ¯ä¸ªå­—ç¬¦ä¸²çš„å®½åº¦
 		int width = getWidth();
 
 		for(int i=0;i<letters.length;i++){
-			//¼ÆËãÒª»æÖÆµÄ×Ö·û´®ËùÕ¼µÄ¿Õ¼ä´óĞ¡
+			//è®¡ç®—è¦ç»˜åˆ¶çš„å­—ç¬¦ä¸²æ‰€å çš„ç©ºé—´å¤§å°
 			Rect bounds = new Rect();
 			paint.getTextBounds(letters[i], 0, letters[i].length(), bounds );
-			//»­×Ö·û´®µÄÆğÊ¼ºá×ø±ê
+			//ç”»å­—ç¬¦ä¸²çš„èµ·å§‹æ¨ªåæ ‡
 			float x = width/2 -bounds.width()/2;
-			//»­×Ö·û´®µÄÆğÊ¼×İ×ø±ê
+			//ç”»å­—ç¬¦ä¸²çš„èµ·å§‹çºµåæ ‡
 			float y = height/2+bounds.height()/2+height*i;
 			canvas.drawText(letters[i], x, y, paint);
 		}
@@ -59,16 +59,16 @@ public class MyLetterView extends View{
 	public boolean onTouchEvent(MotionEvent event) {
 
 		int action = event.getAction();
-		//ÂäÏÂ£¬ÒÆ¶¯£¬Ì§Æğ£¬È¡Ïû
+		//è½ä¸‹ï¼Œç§»åŠ¨ï¼ŒæŠ¬èµ·ï¼Œå–æ¶ˆ
 		switch (action) {
 		case MotionEvent.ACTION_DOWN:
 		case MotionEvent.ACTION_MOVE:
-			//×Ô¶¨ÒåView»ñµÃ»ÒÉ«±³¾°
+			//è‡ªå®šä¹‰Viewè·å¾—ç°è‰²èƒŒæ™¯
 			setBackgroundColor(Color.LTGRAY);
-			//¸ù¾İÊÖÖ¸µ±Ç°Î»ÖÃ£¬»»Ëã³ö¿ÉÄÜµ±Ç°ÊÖÖ¸Î»ÖÃµÄ×Ö·û
+			//æ ¹æ®æ‰‹æŒ‡å½“å‰ä½ç½®ï¼Œæ¢ç®—å‡ºå¯èƒ½å½“å‰æ‰‹æŒ‡ä½ç½®çš„å­—ç¬¦
 			float yPos = event.getY();
 			int idx = (int) ((yPos*letters.length)/getHeight());
-			//Èç¹ûÉèÖÃÁË¼àÌıÆ÷£¬¾Íµ÷ÓÃ¼àÌıÆ÷µÄ»Øµ÷·½·¨£¬½«×Ö·û´«Èë
+			//å¦‚æœè®¾ç½®äº†ç›‘å¬å™¨ï¼Œå°±è°ƒç”¨ç›‘å¬å™¨çš„å›è°ƒæ–¹æ³•ï¼Œå°†å­—ç¬¦ä¼ å…¥
 			if(idx>=0 && idx<letters.length){
 				if(listener!=null){
 					listener.onTouchLetter(letters[idx]);

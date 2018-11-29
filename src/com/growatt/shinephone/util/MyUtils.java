@@ -2177,6 +2177,7 @@ import static com.growatt.shinephone.activity.ShineApplication.context;
 				|| Constant.WiFi_Type_ShineWIFI_S.equals(type)
 				|| "shinelanbox".equals(type)
 				|| "shinewifibox".equals(type)
+				|| type.contains(Constant.WIFI_TYPE_CSIWIFI)
 				) {
 			ConnectivityManager manager = (ConnectivityManager)act.getSystemService(Context.CONNECTIVITY_SERVICE);
 			NetworkInfo.State wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
@@ -2203,7 +2204,7 @@ import static com.growatt.shinephone.activity.ShineApplication.context;
 					bundle.putByte("mAuthMode", (Byte) map.get("mAuthMode"));
 					intent.putExtras(bundle);
 					act.startActivity(intent);
-				} else if (Constant.WiFi_Type_ShineWIFI_S.equals(type)) {//新wifi第二版
+				} else if (Constant.WiFi_Type_ShineWIFI_S.equals(type)|| type.contains(Constant.WIFI_TYPE_CSIWIFI)) {//新wifi第二版
 					Intent intent = new Intent(act, NewWifiS2ConfigActivity.class);
 					intent.putExtra("jumpType", jumpType);
 					intent.putExtra("sn", datalogSn);

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 /**
- * Òì²½¼ÓÔØ±¾µØÍ¼Æ¬¹¤¾ßÀà
+ * å¼‚æ­¥åŠ è½½æœ¬åœ°å›¾ç‰‡å·¥å…·ç±»
  * 
  * @author tony
  * 
@@ -31,7 +31,7 @@ public class LoadLocalImageUtil {
     }
 
     /**
-     * ´ÓÄÚ´æ¿¨ÖĞÒì²½¼ÓÔØ±¾µØÍ¼Æ¬
+     * ä»å†…å­˜å¡ä¸­å¼‚æ­¥åŠ è½½æœ¬åœ°å›¾ç‰‡
      * 
      * @param uri
      * @param imageView
@@ -42,10 +42,10 @@ public class LoadLocalImageUtil {
     }
 
     /**
-     * ´ÓassetsÎÄ¼ş¼ĞÖĞÒì²½¼ÓÔØÍ¼Æ¬
+     * ä»assetsæ–‡ä»¶å¤¹ä¸­å¼‚æ­¥åŠ è½½å›¾ç‰‡
      * 
      * @param imageName
-     *            Í¼Æ¬Ãû³Æ£¬´øºó×ºµÄ£¬ÀıÈç£º1.png
+     *            å›¾ç‰‡åç§°ï¼Œå¸¦åç¼€çš„ï¼Œä¾‹å¦‚ï¼š1.png
      * @param imageView
      */
     public void dispalyFromAssets(String imageName, ImageView imageView) {
@@ -55,7 +55,7 @@ public class LoadLocalImageUtil {
     }
 
     /**
-     * ´ÓdrawableÖĞÒì²½¼ÓÔØ±¾µØÍ¼Æ¬
+     * ä»drawableä¸­å¼‚æ­¥åŠ è½½æœ¬åœ°å›¾ç‰‡
      * 
      * @param imageId
      * @param imageView
@@ -68,7 +68,7 @@ public class LoadLocalImageUtil {
     }
 
     /**
-     * ´ÓÄÚÈİÌáÌá¹©ÕßÖĞ×¥È¡Í¼Æ¬
+     * ä»å†…å®¹ææä¾›è€…ä¸­æŠ“å–å›¾ç‰‡
      */
     public void displayFromContent(String uri, ImageView imageView) {
         // String imageUri = "content://media/external/audio/albumart/13"; //
@@ -76,18 +76,18 @@ public class LoadLocalImageUtil {
         ImageLoader.getInstance().displayImage("content://" + uri, imageView);
     }
     /**
-	 * ¸ù¾İÒªÏÔÊ¾µÄImageViewµÄ´óĞ¡¶ÔÍ¼Ïñ½øĞĞÑ¹Ëõ
-	 * @param is Í¼ÏñÔ´
-	 * @param iv Î´À´ÒªÏÔÊ¾Í¼ÏñµÄImageView
-	 * @return Ñ¹Ëõ¹ıºóµÄÍ¼Ïñ
+	 * æ ¹æ®è¦æ˜¾ç¤ºçš„ImageViewçš„å¤§å°å¯¹å›¾åƒè¿›è¡Œå‹ç¼©
+	 * @param is å›¾åƒæº
+	 * @param iv æœªæ¥è¦æ˜¾ç¤ºå›¾åƒçš„ImageView
+	 * @return å‹ç¼©è¿‡åçš„å›¾åƒ
 	 */
 	
 	public static Bitmap compress(InputStream is,Context c, View iv) {
 		Bitmap bitmap = null;
 		try{
 			
-			//1)ÏÈ»ñµÃÔ­Ê¼Í¼Ïñ(Í¼ÏñÔ´)µÄ³ß´ç´óĞ¡
-			//½èÖúOptioinsÀ´»ñÈ¡Í¼ÏñµÄ´óĞ¡
+			//1)å…ˆè·å¾—åŸå§‹å›¾åƒ(å›¾åƒæº)çš„å°ºå¯¸å¤§å°
+			//å€ŸåŠ©Optioinsæ¥è·å–å›¾åƒçš„å¤§å°
 			//is----------byte[]
 			ByteArrayOutputStream out = new ByteArrayOutputStream();
 			byte[] buff = new byte[4096];
@@ -98,18 +98,18 @@ public class LoadLocalImageUtil {
 			
 			Options opts = new Options();
 			opts.inJustDecodeBounds = true;
-			//optsÒ»µ©Éè¶¨ÁËinJustDecodeBounds = true
-			//BitmapFactoryÊÇ²»»á·µ»Øbitmap¶ÔÏó£¬Ö»»ánull
+			//optsä¸€æ—¦è®¾å®šäº†inJustDecodeBounds = true
+			//BitmapFactoryæ˜¯ä¸ä¼šè¿”å›bitmapå¯¹è±¡ï¼Œåªä¼šnull
 			BitmapFactory.decodeByteArray(out.toByteArray(),0, out.toByteArray().length, opts);
-			int width = opts.outWidth;//Í¼ÏñµÄ¿í¶È(ÏñËØÊı)
-			int height = opts.outHeight;//Í¼Ïñ¸ß¶È(ÏñËØÊı)
-			//2)»ñÈ¡Ï£ÍûµÄ¿í¶È/¸ß¶È
-			int targetWidth  = iv.getWidth();//ImageViewµÄ¿í¶È
-			int targetHeight = iv.getHeight();//ImageviewµÄ¸ß¶È
-			//Èç¹ûÈ¡ImageView¿í¶È/¸ß¶ÈÈ¡²»µ½
+			int width = opts.outWidth;//å›¾åƒçš„å®½åº¦(åƒç´ æ•°)
+			int height = opts.outHeight;//å›¾åƒé«˜åº¦(åƒç´ æ•°)
+			//2)è·å–å¸Œæœ›çš„å®½åº¦/é«˜åº¦
+			int targetWidth  = iv.getWidth();//ImageViewçš„å®½åº¦
+			int targetHeight = iv.getHeight();//Imageviewçš„é«˜åº¦
+			//å¦‚æœå–ImageViewå®½åº¦/é«˜åº¦å–ä¸åˆ°
 			if(targetHeight==0||targetWidth==0){
-				//¿ÉÒÔÊÖ¶¯Ö¸¶¨Öµ(80dp,100dp)
-				//ÒÔµ±Ç°Éè±¸ÆÁÄ»µÄ¿í¶È/ºÍ¸ß¶ÈÀ´×÷ÎªtargetWiddth/targetHeight
+				//å¯ä»¥æ‰‹åŠ¨æŒ‡å®šå€¼(80dp,100dp)
+				//ä»¥å½“å‰è®¾å¤‡å±å¹•çš„å®½åº¦/å’Œé«˜åº¦æ¥ä½œä¸ºtargetWiddth/targetHeight
 				targetWidth = c.getResources().
 						      getDisplayMetrics().
 						      widthPixels;
@@ -118,7 +118,7 @@ public class LoadLocalImageUtil {
 						      heightPixels;
 			}
 			
-			//3)¼ÆËãÑ¹Ëõ±È
+			//3)è®¡ç®—å‹ç¼©æ¯”
 			int sampleSize = 1;
 			
 			if(width*1.0/targetWidth>1||height*1.0/targetHeight>1){
@@ -127,7 +127,7 @@ public class LoadLocalImageUtil {
 								 height*1.0/targetHeight));
 			}
 			
-			//4)Ñ¹ËõÍ¼Ïñ
+			//4)å‹ç¼©å›¾åƒ
 			opts.inSampleSize = sampleSize;
 			opts.inJustDecodeBounds = false;
 			bitmap = BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.toByteArray().length,opts);

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.growatt.shinephone.R;
 
 public class MyAlertDialog {
-    //一个标题加确定按钮
+    //涓�涓爣棰樺姞纭畾鎸夐挳
 	public static void setDialogOne(Context context,int titleId,int msgId){
 	TextView tvTitle=new TextView(context);
 	tvTitle.setGravity(Gravity.CENTER_HORIZONTAL);

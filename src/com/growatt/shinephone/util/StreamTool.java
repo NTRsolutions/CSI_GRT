@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 public class StreamTool {  
     /** 
-     * 把一个inputstream里面的内容转化成一个byte[]  
+     * 鎶婁竴涓猧nputstream閲岄潰鐨勫唴瀹硅浆鍖栨垚涓�涓猙yte[]  
      */  
       
     public static byte[] getBytes(InputStream is) throws Exception{  

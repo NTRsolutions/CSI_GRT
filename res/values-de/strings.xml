@@ -738,7 +738,7 @@
     <string name="PlayAct_cache_success">Zwischenspeichern abgeschlossen</string>
     <string name="是否保存视频">Video speichern?</string>
     <string name="datalogcheck_check_no_datalog_server">Server-Adresse und Land stimmen nicht überein</string>
-    <string name="fragment4_shinewifi">ShineWifi Einstellungen</string>
+    <string name="fragment4_shinewifi">Datalogger Einstellungen</string>
     <string name="user_islogout">Abmelden?</string>
     <string name="utf_open_gprs">GPS deaktiviert</string>
     <string name="是否跳转界面进行设置">urück zu den Einstellungen?</string>

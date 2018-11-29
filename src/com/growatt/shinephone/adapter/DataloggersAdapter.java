@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.growatt.shinephone.R;
+import com.growatt.shinephone.util.Constant;
 
 import java.util.List;
 import java.util.Map;
@@ -63,7 +64,14 @@ public class DataloggersAdapter extends BaseAdapter{
 		hoder.tv1.setText(list.get(position).get("alias").toString()+"("+a+")");
 		hoder.tv2.setText(list.get(position).get("datalog_sn").toString());
 		hoder.tv5.setText(list.get(position).get("update_interval").toString());
-		hoder.tv4.setText(list.get(position).get("device_type").toString());
+		String deviceType=list.get(position).get("device_type").toString();
+		deviceType=deviceType.toLowerCase();
+		if (Constant.WiFi_Type_ShineWIFI_S.equals(deviceType)||deviceType.contains(Constant.WIFI_TYPE_CSIWIFI)){
+			hoder.tv4.setText("CSI-TL-WIFI");
+		}else {
+			hoder.tv4.setText(deviceType);
+		}
+
 //		hoder.tv5.setText(list.get(position).get("unit_id").toString());
 		
 		return convertView;

@@ -739,7 +739,7 @@
     <string name="PlayAct_cache_success">Memorozzazione Cache effettuata con successo</string>
     <string name="是否保存视频">Salvare il video?</string>
     <string name="datalogcheck_check_no_datalog_server">Indirizzo dello ShineServer  e il paese non sono abbinate</string>
-    <string name="fragment4_shinewifi">Configurazione Shine WiFi</string>
+    <string name="fragment4_shinewifi">Configurazione Datalogger</string>
     <string name="user_islogout">Disconnettersi?</string>
     <string name="utf_open_gprs">GPS disattivato</string>
     <string name="是否跳转界面进行设置">Indietro alla pagina di "Impostazione"?</string>

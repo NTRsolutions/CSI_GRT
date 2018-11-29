@@ -32,7 +32,7 @@ public class DefaultHttpClientTool
 //		               @SuppressWarnings("deprecation")
 //					SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null, new TrustStrategy() {
 //
-//		                   //ĞÅÈÎËùÓĞ
+//		                   //ä¿¡ä»»æ‰€æœ‰
 //
 //		                   public boolean isTrusted(X509Certificate[] chain,
 //

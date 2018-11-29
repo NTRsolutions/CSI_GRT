@@ -2,6 +2,6 @@ package com.growatt.shinephone.util;
 
 
 public class FragUtil {
-//	public static ScheduledExecutorService se;//µü´úÆ÷,¼ì²â²É¼¯Æ÷ÊÇ·ñ¹ØÁª·şÎñÆ÷
-	public static String  dataLogUrl;//»ñÈ¡²É¼¯Æ÷ĞÅÏ¢µÄurl;
+//	public static ScheduledExecutorService se;//è¿­ä»£å™¨,æ£€æµ‹é‡‡é›†å™¨æ˜¯å¦å…³è”æœåŠ¡å™¨
+	public static String  dataLogUrl;//è·å–é‡‡é›†å™¨ä¿¡æ¯çš„url;
 }

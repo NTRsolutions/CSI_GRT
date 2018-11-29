@@ -737,7 +737,7 @@
     <string name="PlayAct_cache_success">Cache successfully</string>
     <string name="是否保存视频">Save the video?</string>
     <string name="datalogcheck_check_no_datalog_server">ShineServer address  and country unmatch!</string>
-    <string name="fragment4_shinewifi">ShineWiFi configuration</string>
+    <string name="fragment4_shinewifi">Datalogger configuration</string>
     <string name="user_islogout">Sign out?</string>
     <string name="utf_open_gprs">Location service not open</string>
     <string name="是否跳转界面进行设置">Back to "Settings" page?</string>
