@@ -131,7 +131,7 @@ public class NewWifiS2ConfigActivity extends DemoBase implements View.OnClickLis
                 myFinish();
             }
         });
-        setHeaderTitle(headerView,getString(R.string.fragment4_shinewifi) + getString(R.string.wifilist_configuration) );
+        setHeaderTitle(headerView,getString(R.string.fragment4_shinewifi));
     }
 
     /**

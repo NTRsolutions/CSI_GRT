@@ -883,9 +883,9 @@
     <string name="m104请验证您的手机号码">Please verify your phone number</string>
     <string name="m105请验证您的邮箱地址">Please verify your email address</string>
     <string name="m106wifi信号强度提示">The current Wifi signal is weak, please configure in a Wifi signal strong place.</string>
-    <string name="m107wifi连接路由器">The datalogger is already connected to the router and is being connected to the server...</string>
+    <string name="m107wifi连接路由器">The datalogger is already connected to the router and is being connected to the server…</string>
 
-    <string name="m108wifi提示2">For a configured ShineWiFi, if the router or router password has been replaced, the ShineWiFi needs to be reset before configuration. (Please press the KEY button on the datalogger for more than 3 seconds until the LED light is long bright.)</string>
+    <string name="m108wifi提示2">For a configured WiFi, if the router or router password has been replaced, the WiFi needs to be reset before configuration. (Please press the KEY button on the datalogger for more than 3 seconds until the LED light is long bright.)</string>
     <string name="m109wifi提示3">Please enter the router name and password，then click the \'Set\' button.</string>
 
     <string name="m111PV充电">PV charge</string>
