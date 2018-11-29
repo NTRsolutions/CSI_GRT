@@ -99,7 +99,7 @@ public class ShineApplication extends Application {
 		// 初始化
 		x.Ext.init(this);
 		// 设置是否输出debug
-		x.Ext.setDebug(true);
+		x.Ext.setDebug(false);
 		int maxMemory = (int) (Runtime.getRuntime().maxMemory());
 		File cacheDir = StorageUtils.getOwnCacheDirectory(context.getApplicationContext(), "imageloader/Cache");
 		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
