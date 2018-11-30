@@ -107,7 +107,7 @@ public class Constant {
     //wifi配置识别
     public final static String WiFi_Type_ShineWIFI = "shinewifi";
     public final static String WiFi_Type_ShineWIFI_S = "shinewifi-s";
-    public final static String WIFI_TYPE_CSIWIFI = "CSI";
+    public final static String WIFI_TYPE_CSIWIFI = "csi";
 
     //Max控制密码常量：
     public static boolean isOss2Server = false;
