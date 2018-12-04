@@ -13,6 +13,10 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.content.ContextCompat;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -67,6 +71,7 @@ public class SmartConnection extends DemoBase {
 	private String ssid;
 	private String type="";//100:从工具跳转；101：从oss跳转
 	private String isNewWIFI = "0";
+	private TextView tvConnectWifi;
 	private Handler handler=new Handler(){
 		public void handleMessage(Message msg) {
 			Mydialog.Dismiss();
@@ -173,6 +178,13 @@ public class SmartConnection extends DemoBase {
 		bt1=(Button)findViewById(R.id.button1);
 		bt2=(Button)findViewById(R.id.button2);
 		et1=(EditText)findViewById(R.id.editText1);
+		tvConnectWifi=findViewById(R.id.tvConnectWifi);
+		String tips=getString(R.string.dataloggers_dialog_connectwifi)+getString(R.string.m492配置wifi提示);
+		SpannableString spannableString = new SpannableString(tips);
+		int start=tips.lastIndexOf(getString(R.string.m492配置wifi提示));
+		int end=start+getString(R.string.m492配置wifi提示).length();
+		spannableString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, R.color.connect_wifi_tips)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		tvConnectWifi.setText(spannableString);
 		textview.setText(ssid);
 		mode.setText("Mode:"+mAuthString);
 		imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);

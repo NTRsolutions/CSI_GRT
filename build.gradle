@@ -125,8 +125,8 @@ android {
 //        applicationId "com.growatt.shinephonemax"
         minSdkVersion 15
         targetSdkVersion 16
-        versionCode 6
-        versionName "3.81"
+        versionCode 7
+        versionName "3.9"
         ndk {
             // moduleName "libSmartConnection"
             moduleName "SmartConnection"

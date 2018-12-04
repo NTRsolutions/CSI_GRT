@@ -1081,6 +1081,8 @@
     <string name="PV6电流">PV6电流</string>
     <string name="PV7电流">PV7电流</string>
     <string name="PV8电流">PV8电流</string>
+    
+    <string name="m492配置wifi提示">（请确保当前手机网络连接在2.4G WiFi频段上，暂不支持5G WiFi频段）</string>
 
 </resources>
 

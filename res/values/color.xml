@@ -340,4 +340,5 @@
  <color name="time_data_detial">#009688</color><!--详情数据颜色-->
  <color name="header_2">#26acef</color><!--wifi配置背景-->
  <color name="energy_shadow">#0487d9</color><!--能源界面投影颜色-->
+ <color name="connect_wifi_tips">#e9dd3f</color>
 </resources>

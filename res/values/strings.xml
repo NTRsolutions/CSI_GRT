@@ -1111,6 +1111,8 @@
     <string name="PV6电流">PV6 Current</string>
     <string name="PV7电流">PV7 Current</string>
     <string name="PV8电流">PV8 Current</string>
+
+    <string name="m492配置wifi提示">(Please ensure that your mobile phone was connected to 2.4GHz WiFi, and 5GHz WiFi connection is not available in our App currently)</string>
 </resources>
 
 

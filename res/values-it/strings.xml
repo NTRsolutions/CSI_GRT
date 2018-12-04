@@ -1091,6 +1091,7 @@
     <string name="PV6电流">Corrente Pv6</string>
     <string name="PV7电流">Corrente Pv7</string>
     <string name="PV8电流">Corrente Pv8</string>
+    <string name="m492配置wifi提示">(Assicurati che il tuo telefono cellulare sia connesso a WiFi a 2,4 GHz e la connessione WiFi a 5 GHz non sia disponibile nella nostra app al momento)</string>
 </resources>
 
 

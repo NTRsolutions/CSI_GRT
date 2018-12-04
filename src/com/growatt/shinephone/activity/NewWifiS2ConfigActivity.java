@@ -6,7 +6,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.content.ContextCompat;
+import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.TextUtils;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -53,6 +57,7 @@ public class NewWifiS2ConfigActivity extends DemoBase implements View.OnClickLis
     @ViewInject(R.id.editText1) EditText mEdtApPassword;
     @ViewInject(R.id.button2) Button mBtnConfirm;
     @ViewInject(R.id.button1) Button btnSsid;
+    @ViewInject(R.id.tvConnectWifi)TextView tvConnectWifi;
     private EspWifiAdminSimple mWifiAdmin;
     private int mSpinnerTaskCount = 1;
     private String jumpType = "3";//3、2：采集器列表界面(跳转到Main)；1：注册添加采集器界面(跳转到Login或自动登录)；101：代表从oss跳转
@@ -167,6 +172,12 @@ public class NewWifiS2ConfigActivity extends DemoBase implements View.OnClickLis
     }
 
     private void initView() {
+        String tips=getString(R.string.dataloggers_dialog_connectwifi)+getString(R.string.m492配置wifi提示);
+        SpannableString spannableString = new SpannableString(tips);
+        int start=tips.lastIndexOf(getString(R.string.m492配置wifi提示));
+        int end=start+getString(R.string.m492配置wifi提示).length();
+        spannableString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, R.color.connect_wifi_tips)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        tvConnectWifi.setText(spannableString);
         mWifiAdmin = new EspWifiAdminSimple(this);
         mBtnConfirm.setOnClickListener(this);
         btnSsid.setOnClickListener(this);
