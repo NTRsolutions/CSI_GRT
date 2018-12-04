@@ -73,6 +73,7 @@ public class DatalogCheckActivity extends DoActivity {
 				if(!TextUtils.isEmpty(s)){
 					et1.setText(s);
 //					et2.setText(AppUtils.validateWebbox(s));
+					toConfigDataLogCheck();
 				}
 			}
 		}
@@ -94,226 +95,8 @@ public class DatalogCheckActivity extends DoActivity {
 			@Override
 			public void onClick(View arg0) {
 
-			
-				Mydialog.Show(DatalogCheckActivity.this, "");
-				Log.i("TAG", "url:"+Cons.url);
-				if(TextUtils.isEmpty(Cons.url)){
-					toast(R.string.all_server_url);
-					jumpTo(CountryandCityActivity.class, true);
-					return;
-				}
-//				PostUtil.post("http://"+Cons.url+"/newRegisterAPI.do?op=creatAccount", new postListener() {
-				PostUtil.post(new Urlsutil().creatAccount, new postListener() {
 
-					@Override 
-					public void success(String json) {
-						Mydialog.Dismiss();
-						try {
-							JSONObject jsonObject=new JSONObject(json).getJSONObject("back");
-							String msg=jsonObject.optString("msg");
-							if(jsonObject.opt("success").toString().equals("true")){
-								if(msg.equals("200")){
-									toast(R.string.DatalogCheckActivity_regist_success);
-									String type = jsonObject.get("datalogType").toString().toLowerCase();
-									if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)|| type.contains(Constant.WIFI_TYPE_CSIWIFI)){
-										MyUtils.configWifi(DatalogCheckActivity.this,type,"1",et1.getText().toString().trim());
-									}else {
-										MyControl.autoLogin(DatalogCheckActivity.this,Cons.regMap.getRegUserName(),Cons.regMap.getRegPassword());
-									}
-//									if(type.contains("shinewifi")){
-//										ConnectivityManager manager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-//										State wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-//										if(wifi == State.CONNECTED||wifi==State.CONNECTING){
-//												Map<String, Object> map = new GetWifiInfo(DatalogCheckActivity.this).Info();
-//												if(map.get("mAuthString").toString().equals("")){
-//													AlertDialog builder = new AlertDialog.Builder(DatalogCheckActivity.this).
-//															setTitle(R.string.all_prompt).setMessage(R.string.dataloggers_dialog_connectwifi).
-//															setPositiveButton(R.string.all_ok, new DialogInterface.OnClickListener() {
-//
-//																@Override
-//																public void onClick(DialogInterface arg0, int arg1) {
-//																	arg0.dismiss();
-//																}
-//															}).create();
-//													builder.show();
-//													return;
-//												}
-//												Intent intent=new Intent(DatalogCheckActivity.this,SmartConnection.class);
-//												Bundle bundle=new Bundle();
-//												bundle.putString("type","1");
-//												bundle.putString("id",et1.getText().toString().trim());
-//												bundle.putString("ssid",map.get("ssid").toString());
-//												bundle.putString("mAuthString",map.get("mAuthString").toString());
-//												bundle.putByte("mAuthMode",(Byte) map.get("mAuthMode"));
-//												intent.putExtras(bundle);
-//												startActivity(intent);
-//
-//										}else{
-////											T.make(R.string.dataloggers_dialog_connectwifi);
-//											Intent intent=new Intent(DatalogCheckActivity.this,RegsuecessActivity.class);
-//											Bundle bundle=new Bundle();
-//											bundle.putString("sn", et1.getText().toString().trim());
-//											bundle.putString("type", type);
-//											bundle.putString("act", "datalogcheck");
-//											intent.putExtras(bundle);
-//											startActivity(intent);
-//											finish();
-//										}
-//									}else{
-////										startActivity(new Intent(DatalogCheckActivity.this,LoginActivity.class));
-////										finish();
-//										MyControl.autoLogin(DatalogCheckActivity.this,Cons.regMap.getRegUserName(),Cons.regMap.getRegPassword());
-//									}
-
-								}
-							}else{
-
-								if(msg.equals("501")){
-									toast(R.string.datalogcheck_check_no_overstep);
-									return;
-								}
-								if(msg.equals("502")){
-									MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
-									toast(R.string.datalogcheck_check_no_server);
-									return;
-								}
-								if(msg.equals("503")){
-									toast(R.string.datalogcheck_check_no_userexist);
-									return;
-								}
-								if(msg.equals("602")){
-									MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
-									toast(R.string.datalogcheck_code_602);
-									return;
-								}
-								if(msg.equals("506")){
-									toast(R.string.datalogcheck_check_no_verification);
-									return;
-								}
-								if(msg.equals("603")){
-									toast(R.string.datalogcheck_check_add_datalog_err);
-									return;
-								}
-								if(msg.equals("604")){
-									toast(R.string.datalogcheck_check_no_agentcode);
-									return;
-								}
-								if(msg.equals("605")){
-									toast(R.string.datalogcheck_check_no_datalog_exist);
-									return;
-								}
-								if(msg.equals("606")){
-									toast(R.string.datalogcheck_check_no_datalog_server);
-									return;
-								}
-								if(msg.equals("607")){
-									toast(R.string.datalogcheck_check_no_datalog_server);
-									return;
-								}
-								
-								if(msg.equals("504")){
-									toast(R.string.DatalogCheckAct_username_pwd_empty);
-									return;
-								}
-								if(msg.equals("505")){
-									toast(R.string.DatalogCheckAct_email_empty);
-									return;
-								}
-								if(msg.equals("509")){
-									toast(R.string.DatalogCheckAct_country_empty);
-									return;
-								}
-								if(msg.equals("608")){
-									toast(R.string.datalogcheck_code_608);
-									return;
-								}
-								if(msg.equals("609")){
-									toast(R.string.datalogcheck_code_609);
-									return;
-								}
-								if(msg.equals("701")){
-									MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
-									toast(R.string.datalogcheck_code_701);
-									return;
-								}
-								if(msg.equals("702")){
-									toast(R.string.datalogcheck_code_702);
-									return;
-								}
-								if(msg.equals("507")){
-									toast(R.string.datalogcheck_check_no_agentcode);
-									return;
-								}
-
-								MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
-								toast(msg+":"+getString(R.string.datalogcheck_check_no_server));
-
-							}
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-					}
-					@SuppressLint("DefaultLocale") @Override
-					public void Params(Map<String, String> params) {
-						params.put("regUserName", Cons.regMap.getRegUserName());
-						params.put("regPassword",Cons.regMap.getRegPassword());
-						params.put("regEmail", Cons.regMap.getRegEmail());
-						params.put("regDataLoggerNo",et1.getText().toString().trim());
-//						params.put("regValidateCode", et2.getText().toString().trim());
-						params.put("regValidateCode", "");
-						params.put("regPhoneNumber", Cons.regMap.getRegPhoneNumber());
-//						Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
-//						String s=calendar.getTime().toString();
-//						s=s.substring(s.indexOf("+")+1);
-//						s=s.substring(0, 2);
-						String s = new SimpleDateFormat("Z", Locale.ENGLISH).format(new Date());
-						if (s.length() > 2) {
-							s = s.substring(0, s.length() - 2);
-						}else {
-							s = "8";
-						}
-						if (s.startsWith("+13")){
-							s = "12" ;
-						}
-						Locale locale = getResources().getConfiguration().locale;
-						String language = locale.getLanguage();
-						if(language.toLowerCase().contains("zh")){
-							language="zh_cn";
-						}else if(language.toLowerCase().contains("en")){
-							language="en";
-						}else if(language.toLowerCase().contains("fr")){
-							language="fr";
-						}else if(language.toLowerCase().contains("ja")){
-							language="ja";
-						}else if(language.toLowerCase().contains("it")){
-							language="it";
-						}else if(language.toLowerCase().contains("ho")){
-							language="ho";
-						}else if(language.toLowerCase().contains("tk")){
-							language="tk";
-						}else if(language.toLowerCase().contains("pl")){
-							language="pl";
-						}else if(language.toLowerCase().contains("gk")){
-							language="gk";
-						}else if(language.toLowerCase().contains("gm")){
-							language="gm";
-						}else {
-							language = "en";
-						}
-						params.put("regTimeZone", s);
-						params.put("regLanguage", language);
-						params.put("regCountry", Cons.regMap.getRegCountry());
-						params.put("regCity",Cons.regMap.getRegCity());
-						params.put("agentCode",Cons.regMap.getAgentCode());
-						params.put("regLng",Cons.regMap.getRegLng());
-						params.put("regLat",Cons.regMap.getRegLat());
-						
-					}
-					@Override
-					public void LoginError(String str) {
-
-					}
-				});
+				toConfigDataLogCheck();
 			
 			}
 		});
@@ -533,6 +316,228 @@ public class DatalogCheckActivity extends DoActivity {
 //				});
 //			}
 //		});
+	}
+
+	private void toConfigDataLogCheck() {
+		Mydialog.Show(DatalogCheckActivity.this, "");
+		Log.i("TAG", "url:"+ Cons.url);
+		if(TextUtils.isEmpty(Cons.url)){
+            toast(R.string.all_server_url);
+            jumpTo(CountryandCityActivity.class, true);
+            return;
+        }
+//				PostUtil.post("http://"+Cons.url+"/newRegisterAPI.do?op=creatAccount", new postListener() {
+		PostUtil.post(new Urlsutil().creatAccount, new postListener() {
+
+            @Override
+            public void success(String json) {
+                Mydialog.Dismiss();
+                try {
+                    JSONObject jsonObject=new JSONObject(json).getJSONObject("back");
+                    String msg=jsonObject.optString("msg");
+                    if(jsonObject.opt("success").toString().equals("true")){
+                        if(msg.equals("200")){
+                            toast(R.string.DatalogCheckActivity_regist_success);
+                            String type = jsonObject.get("datalogType").toString().toLowerCase();
+                            if (Constant.WiFi_Type_ShineWIFI.equals(type) || Constant.WiFi_Type_ShineWIFI_S.equals(type)|| type.contains(Constant.WIFI_TYPE_CSIWIFI)){
+                                MyUtils.configWifi(DatalogCheckActivity.this,type,"1",et1.getText().toString().trim());
+                            }else {
+                                MyControl.autoLogin(DatalogCheckActivity.this,Cons.regMap.getRegUserName(),Cons.regMap.getRegPassword());
+                            }
+//									if(type.contains("shinewifi")){
+//										ConnectivityManager manager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+//										State wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
+//										if(wifi == State.CONNECTED||wifi==State.CONNECTING){
+//												Map<String, Object> map = new GetWifiInfo(DatalogCheckActivity.this).Info();
+//												if(map.get("mAuthString").toString().equals("")){
+//													AlertDialog builder = new AlertDialog.Builder(DatalogCheckActivity.this).
+//															setTitle(R.string.all_prompt).setMessage(R.string.dataloggers_dialog_connectwifi).
+//															setPositiveButton(R.string.all_ok, new DialogInterface.OnClickListener() {
+//
+//																@Override
+//																public void onClick(DialogInterface arg0, int arg1) {
+//																	arg0.dismiss();
+//																}
+//															}).create();
+//													builder.show();
+//													return;
+//												}
+//												Intent intent=new Intent(DatalogCheckActivity.this,SmartConnection.class);
+//												Bundle bundle=new Bundle();
+//												bundle.putString("type","1");
+//												bundle.putString("id",et1.getText().toString().trim());
+//												bundle.putString("ssid",map.get("ssid").toString());
+//												bundle.putString("mAuthString",map.get("mAuthString").toString());
+//												bundle.putByte("mAuthMode",(Byte) map.get("mAuthMode"));
+//												intent.putExtras(bundle);
+//												startActivity(intent);
+//
+//										}else{
+////											T.make(R.string.dataloggers_dialog_connectwifi);
+//											Intent intent=new Intent(DatalogCheckActivity.this,RegsuecessActivity.class);
+//											Bundle bundle=new Bundle();
+//											bundle.putString("sn", et1.getText().toString().trim());
+//											bundle.putString("type", type);
+//											bundle.putString("act", "datalogcheck");
+//											intent.putExtras(bundle);
+//											startActivity(intent);
+//											finish();
+//										}
+//									}else{
+////										startActivity(new Intent(DatalogCheckActivity.this,LoginActivity.class));
+////										finish();
+//										MyControl.autoLogin(DatalogCheckActivity.this,Cons.regMap.getRegUserName(),Cons.regMap.getRegPassword());
+//									}
+
+                        }
+                    }else{
+
+                        if(msg.equals("501")){
+                            toast(R.string.datalogcheck_check_no_overstep);
+                            return;
+                        }
+                        if(msg.equals("502")){
+                            MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
+                            toast(R.string.datalogcheck_check_no_server);
+                            return;
+                        }
+                        if(msg.equals("503")){
+                            toast(R.string.datalogcheck_check_no_userexist);
+                            return;
+                        }
+                        if(msg.equals("602")){
+                            MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
+                            toast(R.string.datalogcheck_code_602);
+                            return;
+                        }
+                        if(msg.equals("506")){
+                            toast(R.string.datalogcheck_check_no_verification);
+                            return;
+                        }
+                        if(msg.equals("603")){
+                            toast(R.string.datalogcheck_check_add_datalog_err);
+                            return;
+                        }
+                        if(msg.equals("604")){
+                            toast(R.string.datalogcheck_check_no_agentcode);
+                            return;
+                        }
+                        if(msg.equals("605")){
+                            toast(R.string.datalogcheck_check_no_datalog_exist);
+                            return;
+                        }
+                        if(msg.equals("606")){
+                            toast(R.string.datalogcheck_check_no_datalog_server);
+                            return;
+                        }
+                        if(msg.equals("607")){
+                            toast(R.string.datalogcheck_check_no_datalog_server);
+                            return;
+                        }
+
+                        if(msg.equals("504")){
+                            toast(R.string.DatalogCheckAct_username_pwd_empty);
+                            return;
+                        }
+                        if(msg.equals("505")){
+                            toast(R.string.DatalogCheckAct_email_empty);
+                            return;
+                        }
+                        if(msg.equals("509")){
+                            toast(R.string.DatalogCheckAct_country_empty);
+                            return;
+                        }
+                        if(msg.equals("608")){
+                            toast(R.string.datalogcheck_code_608);
+                            return;
+                        }
+                        if(msg.equals("609")){
+                            toast(R.string.datalogcheck_code_609);
+                            return;
+                        }
+                        if(msg.equals("701")){
+                            MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
+                            toast(R.string.datalogcheck_code_701);
+                            return;
+                        }
+                        if(msg.equals("702")){
+                            toast(R.string.datalogcheck_code_702);
+                            return;
+                        }
+                        if(msg.equals("507")){
+                            toast(R.string.datalogcheck_check_no_agentcode);
+                            return;
+                        }
+
+                        MyControl.putAppErrMsg("注册:"+Cons.regMap.getRegUserName()+"-msg:"+msg,DatalogCheckActivity.this);
+                        toast(msg+":"+getString(R.string.datalogcheck_check_no_server));
+
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            @SuppressLint("DefaultLocale") @Override
+            public void Params(Map<String, String> params) {
+                params.put("regUserName", Cons.regMap.getRegUserName());
+                params.put("regPassword",Cons.regMap.getRegPassword());
+                params.put("regEmail", Cons.regMap.getRegEmail());
+                params.put("regDataLoggerNo",et1.getText().toString().trim());
+//						params.put("regValidateCode", et2.getText().toString().trim());
+                params.put("regValidateCode", "");
+                params.put("regPhoneNumber", Cons.regMap.getRegPhoneNumber());
+//						Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+//						String s=calendar.getTime().toString();
+//						s=s.substring(s.indexOf("+")+1);
+//						s=s.substring(0, 2);
+                String s = new SimpleDateFormat("Z", Locale.ENGLISH).format(new Date());
+                if (s.length() > 2) {
+                    s = s.substring(0, s.length() - 2);
+                }else {
+                    s = "8";
+                }
+                if (s.startsWith("+13")){
+                    s = "12" ;
+                }
+                Locale locale = getResources().getConfiguration().locale;
+                String language = locale.getLanguage();
+                if(language.toLowerCase().contains("zh")){
+                    language="zh_cn";
+                }else if(language.toLowerCase().contains("en")){
+                    language="en";
+                }else if(language.toLowerCase().contains("fr")){
+                    language="fr";
+                }else if(language.toLowerCase().contains("ja")){
+                    language="ja";
+                }else if(language.toLowerCase().contains("it")){
+                    language="it";
+                }else if(language.toLowerCase().contains("ho")){
+                    language="ho";
+                }else if(language.toLowerCase().contains("tk")){
+                    language="tk";
+                }else if(language.toLowerCase().contains("pl")){
+                    language="pl";
+                }else if(language.toLowerCase().contains("gk")){
+                    language="gk";
+                }else if(language.toLowerCase().contains("gm")){
+                    language="gm";
+                }else {
+                    language = "en";
+                }
+                params.put("regTimeZone", s);
+                params.put("regLanguage", language);
+                params.put("regCountry", Cons.regMap.getRegCountry());
+                params.put("regCity",Cons.regMap.getRegCity());
+                params.put("agentCode",Cons.regMap.getAgentCode());
+                params.put("regLng",Cons.regMap.getRegLng());
+                params.put("regLat",Cons.regMap.getRegLat());
+
+            }
+            @Override
+            public void LoginError(String str) {
+
+            }
+        });
 	}
 
 	@Override
