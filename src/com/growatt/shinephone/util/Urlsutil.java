@@ -2,10 +2,10 @@ package com.growatt.shinephone.util;
 
 import java.io.Serializable;
 public class Urlsutil implements Serializable{
-	public  static String serverurl="http://monitoring.csisolar.com";
-	public static String url ="http://monitoring.csisolar.com";
-	public static String url_cn ="http://monitoring.csisolar.com";
-	public static String url_host ="monitoring.csisolar.com";//注册时用
+	public  static String serverurl="http://monitoringhistory.csisolar.com";
+	public static String url ="http://monitoringhistory.csisolar.com";
+	public static String url_cn ="http://monitoringhistory.csisolar.com";
+	public static String url_host ="monitoringhistory.csisolar.com";//注册时用
 
 //	public  static String serverurl="http://server.growatt.com";
 //	public static String url ="http://server.growatt.com";
